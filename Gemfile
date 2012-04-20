@@ -2,5 +2,4 @@
 gem 'mechanize'
 gem 'nokogiri'
 gem 'sinatra'
-gem 'eventmachine'
 gem 'thin'
