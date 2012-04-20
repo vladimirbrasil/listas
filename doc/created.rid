@@ -1,0 +1,14 @@
+Wed, 18 Apr 2012 12:38:56 -0300
+./bin/alvo.txt	Wed, 11 Apr 2012 10:49:44 -0300
+./bin/listas.rb	Wed, 18 Apr 2012 12:15:33 -0300
+./bin/vizinhos.txt	Wed, 18 Apr 2012 12:28:37 -0300
+./bin/vizinhos_mais_proximos.txt	Wed, 18 Apr 2012 12:28:37 -0300
+./lib/listas/assinante.rb	Wed, 18 Apr 2012 12:08:08 -0300
+./lib/listas/leitor.rb	Wed, 18 Apr 2012 12:38:49 -0300
+./lib/listas/runner.rb	Wed, 18 Apr 2012 12:24:24 -0300
+./lib/listas/sessao.rb	Wed, 18 Apr 2012 12:25:15 -0300
+./test/teste_assinante.rb	Tue, 17 Apr 2012 23:47:09 -0300
+./test/teste_leitor.rb	Wed, 18 Apr 2012 11:46:14 -0300
+./test/teste_runner.rb	Tue, 17 Apr 2012 23:47:12 -0300
+./test/teste_sessao.rb	Tue, 17 Apr 2012 23:47:06 -0300
+./test/xml_cidades.txt	Wed, 18 Apr 2012 09:07:55 -0300
