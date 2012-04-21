@@ -8,13 +8,13 @@ require 'mechanize'
 
 class TesteLeitor < Test::Unit::TestCase
   CIDADES = {
-    # 51000 => ["Porto Alegre"],
-    # 51062 => ["Canoas"],
-    # 51182 => ["Novo Hamburgo"],
-    # 51612 => ["Capela de Santana"],
-    # 51612 => ["Osório"]
-    # 11592 => ["Santos", "sp"]
-    51009 => ["Alvorada"],
+    51000 => ["Porto Alegre"],
+    51062 => ["Canoas"],
+    51182 => ["Novo Hamburgo"],
+    51612 => ["Capela de Santana"],
+    51183 => ["Osorio"],
+    11592 => ["Santos", "sp"],
+    51009 => ["Alvorada"]
   }
 
   context "cidades" do
@@ -26,13 +26,13 @@ class TesteLeitor < Test::Unit::TestCase
         assert_equal(codigo, Listas::Leitor.new("").buscar_codigo_cidade(local[0], uf))
       end
     end
-    # should "retornar 51000 se não for fornecida a cidade" do
-      # assert_equal(CIDADE_DEFAULT, Listas::Leitor.new("").buscar_codigo_cidade(""))
-      # assert_equal(CIDADE_DEFAULT, Listas::Leitor.new("").buscar_codigo_cidade())
-    # end
-    # should "retornar RunTimeError para cidade inexistente" do
-      # assert_raises { Listas::Leitor.new("").buscar_codigo_cidade('Cidade Inexistente') }
-    # end
+    should "retornar 51000 se não for fornecida a cidade" do
+      assert_equal(CIDADE_DEFAULT, Listas::Leitor.new("").buscar_codigo_cidade(""))
+      assert_equal(CIDADE_DEFAULT, Listas::Leitor.new("").buscar_codigo_cidade())
+    end
+    should "retornar RunTimeError para cidade inexistente" do
+      assert_raises { Listas::Leitor.new("").buscar_codigo_cidade('Cidade Inexistente') }
+    end
   end
 end
 

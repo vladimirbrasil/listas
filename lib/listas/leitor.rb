@@ -223,12 +223,10 @@ module Listas
     # Balne&#x1CA9;o Ponte do Arame
     #++
     def buscar_codigo_cidade(cidade = "Porto Alegre", uf = "rs")
-      hash_cidades = { viamao: 52892, "porto alegre": 51000, canoas: 51062 }
-
       hash_cidades = {}
       File.open("C:/Users/Vla/Documents/Ruby/listas/lib/listas/cidades.yml") { |f| hash_cidades = YAML.load(f) }
-      if hash_cidades.has_key?(cidade) then return Integer(hash_cidades[cidade])
-      
+      return Integer(hash_cidades[cidade]) if hash_cidades.has_key?(cidade)
+
       hash_cidades = {}
       local_agent = Mechanize.new
       page_cidades = local_agent.post('http://www.telelistas.net/AjaxHandler.ashx', {'state'=>uf, 'style'=>'busca_interna', 'selectedcidade'=>'Porto Alegre', 'clientId'=>'end_localidade_select', 'method'=>'GetSearchCitiesNamed'})
