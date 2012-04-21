@@ -15,7 +15,7 @@ get '/endereco' do
   max_vizinhos = params[:max_vizinhos].nil? ? 10 : Integer(params[:max_vizinhos])
   rua = params[:rua]
   numero = params[:numero].nil? ? 0 : Integer(params[:numero])
-  cidade = params[:cidade].nil? ? "porto alegre" : Integer(params[:cidade])
+  cidade = params[:cidade].nil? ? "porto alegre" : params[:cidade]
   uf = params[:uf].nil? ? "rs" : Integer(params[:uf])
 
   # if ARGV.empty? then File.open("alvo.txt","r") { |file| ARGV = file.gets.split(',') } end
