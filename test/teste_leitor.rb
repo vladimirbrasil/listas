@@ -26,6 +26,13 @@ class TesteLeitor < Test::Unit::TestCase
         assert_equal(codigo, Listas::Leitor.new("").buscar_codigo_cidade(local[0], uf))
       end
     end
+    CIDADES.each do |codigo, local|
+      uf = "rs"
+      uf = local[1] unless local[1].nil?
+      should "retornar o codigo #{codigo} para a cidade #{local[0]} maiuscula ou minuscula" do
+        assert_equal(codigo, Listas::Leitor.new("").buscar_codigo_cidade(local[0].downcase!, uf))
+      end
+    end
     should "retornar 51000 se não for fornecida a cidade" do
       assert_equal(CIDADE_DEFAULT, Listas::Leitor.new("").buscar_codigo_cidade(""))
       assert_equal(CIDADE_DEFAULT, Listas::Leitor.new("").buscar_codigo_cidade())
