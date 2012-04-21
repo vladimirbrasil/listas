@@ -16,6 +16,8 @@ get '/endereco/:rua/:numero/:cidade' do
   # if ARGV.empty? then File.open("alvo.txt","r") { |file| ARGV = file.gets.split(',') } end
   vizinhos = Listas::Runner.new.buscar_vizinhos(ARGV)
   
+  return "Nenhum assinante encontrado." if vizinhos.empty?
+  
   str = ""
   vizinhos.each do |vizinho|
     str = str + "#{vizinho.dist}<br>#{vizinho.nome}<br>#{vizinho.telefone}<br>#{vizinho.endereco}<br><br>"
