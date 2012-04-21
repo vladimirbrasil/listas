@@ -7,13 +7,14 @@ require 'shoulda'
 require 'test/unit'
 
 class TesteRunner < Test::Unit::TestCase
+  MAX_VIZINHOS = 10
   ENDERECOS = {
 #    83 =>   ['camelias',  '56', 'porto alegre'],
 #    0 =>    ['camelias',  '56', 'novo hamburgo'],
 #    1509 => ['anita garibaldi',  '1160', 'porto alegre'],
+    83 => ['alberto bacarat',  '54', 'santos', 'sp'],
     117 =>   ['camelias',  '56', 'canoas']
   }
-  
 
   context "main" do
     setup do 
@@ -24,7 +25,7 @@ class TesteRunner < Test::Unit::TestCase
       ENDERECOS.each do |total, endereco|
         should "encontrar #{total} assinantes para o endereco #{endereco.join(", ")}" do
           #x.report("sem_thr: #{total}") { assert_equal(total, main(listas.agent,endereco,true)) }
-          x.report("#{total}: ") { assert_equal(total, @runner.buscar_vizinhos(endereco)) }
+          x.report("#{total}: ") { assert_equal(MAX_VIZINHOS, @runner.buscar_vizinhos(MAX_VIZINHOS, *endereco).length) }
         end
       end
     end

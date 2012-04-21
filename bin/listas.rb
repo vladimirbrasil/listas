@@ -10,11 +10,16 @@ require 'thin'
 require 'sinatra'
 require_relative '../lib/listas/runner'
 
-get '/endereco/:rua/:numero/:cidade' do
-  ARGV = [params[:rua],params[:numero],params[:cidade]]
+get '/endereco' do
+  
+  max_vizinhos = params[:max_vizinhos].nil? ? 10 : Integer(params[:max_vizinhos])
+  rua = params[:rua]
+  numero = params[:numero].nil? ? 0 : Integer(params[:numero])
+  cidade = params[:cidade].nil? ? "porto alegre" : Integer(params[:cidade])
+  uf = params[:uf].nil? ? "rs" : Integer(params[:uf])
 
   # if ARGV.empty? then File.open("alvo.txt","r") { |file| ARGV = file.gets.split(',') } end
-  vizinhos = Listas::Runner.new.buscar_vizinhos(ARGV)
+  vizinhos = Listas::Runner.new.buscar_vizinhos(max_vizinhos, rua, numero, cidade, uf)
   
   return "Nenhum assinante encontrado." if vizinhos.empty?
   

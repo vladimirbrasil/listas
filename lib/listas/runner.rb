@@ -50,18 +50,16 @@ module Listas
     Além de trazer vizinhos mais próximos, permitir trazer: 'mercadinhos', 'padarias' e afins, se houver. Estes tipos de comércio podem conhecer o alvo.
 =end
 #++
-    def buscar_vizinhos(argv_local = false)
+    def buscar_vizinhos(max_vizinhos, rua, numero = 0, cidade = "porto alegre", uf = "rs")
+#      puts "captar os argumentos max_vizinhos='#{max_vizinhos}', rua='#{rua}', numero='#{numero}', cidade='#{cidade}', uf='#{uf}' para o endereco passado como argumento"
       begin
-        if argv_local then @rua, @numero, @cidade, @uf = argv_local
-        else @rua, @numero, @cidade, @uf = @argv end
-        @uf = "rs" if @uf.nil? 
-        @leitor.buscar_por_endereco(@rua,@numero,@cidade,@uf)
+        @leitor.buscar_por_endereco(rua,numero,cidade,uf)
       rescue
         raise
       ensure
         puts "#{@leitor.assinantes.length} assinantes diferentes encontrados." unless @sem_mensagens
         vizinhos = []
-        vizinhos = @leitor.filtrar_vizinhos(10)
+        vizinhos = @leitor.filtrar_vizinhos(Integer(max_vizinhos))
         #File.open("../bin/vizinhos.txt", 'w'){|f| f.puts @leitor.assinantes}
         #File.open("../bin/vizinhos_mais_proximos.txt", 'w'){|f| f.puts vizinhos}
         #return @leitor.assinantes.length
