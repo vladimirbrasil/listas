@@ -16,7 +16,7 @@ get '/endereco' do
   rua = params[:rua]
   numero = params[:numero].nil? ? 0 : Integer(params[:numero])
   cidade = params[:cidade].nil? ? "porto alegre" : params[:cidade]
-  uf = params[:uf].nil? ? "rs" : Integer(params[:uf])
+  uf = params[:uf].nil? ? "rs" : params[:uf]
 
   # if ARGV.empty? then File.open("alvo.txt","r") { |file| ARGV = file.gets.split(',') } end
   vizinhos = Listas::Runner.new.buscar_vizinhos(max_vizinhos, rua, numero, cidade, uf)
