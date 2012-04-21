@@ -1,4 +1,5 @@
-﻿# coding: utf-8
+﻿#!/usr/bin/env ruby
+# coding: utf-8
 #-- 
 =begin
   Estudar possibilidade de tirar informações de login, senha e url para poder disponibilizar para o público criando uma gem

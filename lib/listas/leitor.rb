@@ -1,6 +1,8 @@
-﻿# coding: utf-8
+﻿#!/usr/bin/env ruby
+# coding: utf-8
 require_relative 'assinante'
 require 'nokogiri'
+require 'yaml'
 
 module Listas
   #-- 
@@ -221,21 +223,24 @@ module Listas
     # Balne&#x1CA9;o Ponte do Arame
     #++
     def buscar_codigo_cidade(cidade = "Porto Alegre", uf = "rs")
-      if Regexp.new(cidade,Regexp::IGNORECASE).match("Porto Alegre") then return 51000 end
-      if Regexp.new(cidade,Regexp::IGNORECASE).match("Canoas") then return 51062 end
+      hash_cidades = { viamao: 52892, "porto alegre": 51000, canoas: 51062 }
 
+      hash_cidades = {}
+      File.open("C:/Users/Vla/Documents/Ruby/listas/lib/listas/cidades.yml") { |f| hash_cidades = YAML.load(f) }
+      if hash_cidades.has_key?(cidade) then return Integer(hash_cidades[cidade])
+      
       hash_cidades = {}
       local_agent = Mechanize.new
       page_cidades = local_agent.post('http://www.telelistas.net/AjaxHandler.ashx', {'state'=>uf, 'style'=>'busca_interna', 'selectedcidade'=>'Porto Alegre', 'clientId'=>'end_localidade_select', 'method'=>'GetSearchCitiesNamed'})
       xml_doc = Nokogiri::XML(page_cidades.body)
 #--
-#=begin
+=begin
       puts "encoding-- #{xml_doc.encoding}"
       File.open("C:/Users/Vla/Documents/Ruby/listas/test/xml_cidades.txt", 'w:ascii-8bit') do |f| 
       puts "extern encod-- #{f.external_encoding}" 
       f.puts xml_doc
       end
-#=end
+=end
 #++
       xml_doc.xpath("//option").each { |item|	hash_cidades[item.text] = item["value"] }
       cidade = cidade.split.each { |x| x.capitalize! unless x.length <= 2}.join(" ")

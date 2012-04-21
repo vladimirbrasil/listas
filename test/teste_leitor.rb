@@ -14,7 +14,7 @@ class TesteLeitor < Test::Unit::TestCase
     # 51612 => ["Capela de Santana"],
     # 51612 => ["Osório"]
     # 11592 => ["Santos", "sp"]
-    51612 => ["Capela de Santana"],
+    51009 => ["Alvorada"],
   }
 
   context "cidades" do

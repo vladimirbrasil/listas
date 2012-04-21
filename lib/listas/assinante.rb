@@ -1,4 +1,5 @@
-﻿# coding: utf-8
+﻿#!/usr/bin/env ruby
+# coding: utf-8
 module Listas
   # Esta classe guarda _nome_, _telefone_ e _endereço_ do assinante.
   # Adicionalmente, a classe manipula estes campos e retorna mais informações, como: 
