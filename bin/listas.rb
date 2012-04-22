@@ -8,26 +8,25 @@ require "rubygems"
 require "bundler/setup"
 require 'thin'
 require 'sinatra'
+#require 'json'
 require_relative '../lib/listas/runner'
 
 get '/endereco' do
-  
+
   max_vizinhos = params[:max_vizinhos].nil? ? 10 : Integer(params[:max_vizinhos])
   rua = params[:rua]
   numero = params[:numero].nil? ? 0 : Integer(params[:numero])
   cidade = params[:cidade].nil? ? "porto alegre" : params[:cidade]
   uf = params[:uf].nil? ? "rs" : params[:uf]
 
-  # if ARGV.empty? then File.open("alvo.txt","r") { |file| ARGV = file.gets.split(',') } end
   vizinhos = Listas::Runner.new.buscar_vizinhos(max_vizinhos, rua, numero, cidade, uf)
-  
-  return "Nenhum assinante encontrado." if vizinhos.empty?
+  return "Nenhum assinante encontrado para max_vizinhos='#{max_vizinhos}', rua='#{rua}', numero='#{numero}', cidade='#{cidade}', uf='#{uf}'" if vizinhos.empty?
   
   str = ""
   vizinhos.each do |vizinho|
     str = str + "#{vizinho.dist}<br>#{vizinho.nome}<br>#{vizinho.telefone}<br>#{vizinho.endereco}<br><br>"
   end
-   
+  
   "#{str}"
   
 end

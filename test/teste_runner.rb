@@ -12,7 +12,7 @@ class TesteRunner < Test::Unit::TestCase
 #    83 =>   ['camelias',  '56', 'porto alegre'],
 #    0 =>    ['camelias',  '56', 'novo hamburgo'],
 #    1509 => ['anita garibaldi',  '1160', 'porto alegre'],
-    83 => ['alberto bacarat',  '54', 'santos', 'sp'],
+#    83 => ['alberto bacarat',  '54', 'santos', 'sp'],
     117 =>   ['camelias',  '56', 'canoas']
   }
 
