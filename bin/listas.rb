@@ -22,6 +22,8 @@ get '/endereco' do
   vizinhos = Listas::Runner.new.buscar_vizinhos(max_vizinhos, rua, numero, cidade, uf)
   return "Nenhum assinante encontrado para max_vizinhos='#{max_vizinhos}', rua='#{rua}', numero='#{numero}', cidade='#{cidade}', uf='#{uf}'" if vizinhos.empty?
   
+  return "Erro: #{vizinhos}" if vizinhos.is_a? String
+  
   str = ""
   vizinhos.each do |vizinho|
     str = str + "#{vizinho.dist}<br>#{vizinho.nome}<br>#{vizinho.telefone}<br>#{vizinho.endereco}<br><br>"

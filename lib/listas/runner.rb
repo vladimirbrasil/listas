@@ -55,7 +55,7 @@ module Listas
       begin
         @leitor.buscar_por_endereco(rua,numero,cidade,uf)
       rescue
-        raise
+        return #{$!}
       ensure
         puts "#{@leitor.assinantes.length} assinantes diferentes encontrados." unless @sem_mensagens
         vizinhos = []
