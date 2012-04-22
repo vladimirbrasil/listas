@@ -20,9 +20,9 @@ get '/endereco' do
   uf = params[:uf].nil? ? "rs" : params[:uf]
 
   vizinhos = Listas::Runner.new.buscar_vizinhos(max_vizinhos, rua, numero, cidade, uf)
+  return "Erro: #{vizinhos}" if vizinhos.is_a? String
   return "Nenhum assinante encontrado para max_vizinhos='#{max_vizinhos}', rua='#{rua}', numero='#{numero}', cidade='#{cidade}', uf='#{uf}'" if vizinhos.empty?
   
-  return "Erro: #{vizinhos}" if vizinhos.is_a? String
   
   str = ""
   vizinhos.each do |vizinho|

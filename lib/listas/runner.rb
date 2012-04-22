@@ -54,9 +54,6 @@ module Listas
 #      puts "captar os argumentos max_vizinhos='#{max_vizinhos}', rua='#{rua}', numero='#{numero}', cidade='#{cidade}', uf='#{uf}' para o endereco passado como argumento"
       begin
         @leitor.buscar_por_endereco(rua,numero,cidade,uf)
-      rescue
-        return #{$!}
-      ensure
         puts "#{@leitor.assinantes.length} assinantes diferentes encontrados." unless @sem_mensagens
         vizinhos = []
         vizinhos = @leitor.filtrar_vizinhos(Integer(max_vizinhos))
@@ -64,6 +61,9 @@ module Listas
         #File.open("../bin/vizinhos_mais_proximos.txt", 'w'){|f| f.puts vizinhos}
         #return @leitor.assinantes.length
         return vizinhos
+      rescue
+        return "#{$!}"
+      ensure
       end
     end
   end
