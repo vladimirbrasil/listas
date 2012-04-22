@@ -224,11 +224,12 @@ module Listas
     #++
     def buscar_codigo_cidade(cidade = "Porto Alegre", uf = "rs")
       cidade = cidade.split.each { |x| x.capitalize! unless x.length <= 2}.join(" ")
-      # hash_cidades = {}
-      # File.open("C:/Users/Vla/Documents/Ruby/listas/lib/listas/cidades.yml") { |f| hash_cidades = YAML.load(f) }
-      # return Integer(hash_cidades[cidade]) if hash_cidades.has_key?(cidade)
+      hash_cidades = {}
+#      File.open("C:/Users/Vla/Documents/Ruby/listas/lib/listas/cidades2.yml","w") { |f| f.puts YAML.dump(COD_CIDADES) }
+      File.open("C:/Users/Vla/Documents/Ruby/listas/lib/listas/cidades.yml") { |f| hash_cidades = YAML.load(f) }
+      return Integer(hash_cidades[cidade]) if hash_cidades.has_key?(cidade)
 
-      return Integer(COD_CIDADES[cidade]) if COD_CIDADES.has_key?(cidade)
+      #return Integer(COD_CIDADES[cidade]) if COD_CIDADES.has_key?(cidade)
 
       hash_cidades = {}
       local_agent = Mechanize.new
