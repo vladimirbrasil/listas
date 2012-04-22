@@ -225,14 +225,13 @@ module Listas
     def buscar_codigo_cidade(cidade = "Porto Alegre", uf = "rs")
       cidade = cidade.split.each { |x| x.capitalize! unless x.length <= 2}.join(" ")
       hash_cidades = {}
-      File.open("../cidades.yml") { |f| hash_cidades = YAML.load(f) }
-      # if File.exists?("cidades.yml")
-        # File.open("cidades.yml") { |f| hash_cidades = YAML.load(f) }
-      # elsif File.exists?("../cidades.yml")
-        # File.open("../cidades.yml") { |f| hash_cidades = YAML.load(f) }
-      # else
-        # fail "nao encontrou o arquivo cidades.yml"
-      # end
+      if File.exists?("cidades.yml") # only works with Heroku
+        File.open("cidades.yml") { |f| hash_cidades = YAML.load(f) }
+      elsif File.exists?("../cidades.yml") # only works with Sinatra local host
+        File.open("../cidades.yml") { |f| hash_cidades = YAML.load(f) }
+      else
+        fail "nao encontrou o arquivo cidades.yml"
+      end
       return Integer(hash_cidades[cidade]) if hash_cidades.has_key?(cidade)
 
       local_agent = Mechanize.new
