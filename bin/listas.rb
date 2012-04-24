@@ -8,7 +8,7 @@ require "rubygems"
 require "bundler/setup"
 require 'thin'
 require 'sinatra'
-#require 'json'
+require 'json'
 require_relative '../lib/listas/runner'
 
 get '/endereco' do
@@ -19,16 +19,24 @@ get '/endereco' do
   cidade = params[:cidade].nil? ? "porto alegre" : params[:cidade]
   uf = params[:uf].nil? ? "rs" : params[:uf]
 
-  vizinhos = Listas::Runner.new.buscar_vizinhos(max_vizinhos, rua, numero, cidade, uf)
-  return "Erro: #{vizinhos}" if vizinhos.is_a? String
-  return "Nenhum assinante encontrado para max_vizinhos='#{max_vizinhos}', rua='#{rua}', numero='#{numero}', cidade='#{cidade}', uf='#{uf}'" if vizinhos.empty?
-  
-  
-  str = ""
-  vizinhos.each do |vizinho|
-    str = str + "#{vizinho.dist}<br>#{vizinho.nome}<br>#{vizinho.telefone}<br>#{vizinho.endereco}<br><br>"
+  if params[:rua].nil? then
+    status 404
+    return "Erro: parametros insuficientes para efetuar a consulta"
   end
+
+  vizinhos = Listas::Runner.new.buscar_vizinhos(max_vizinhos, rua, numero, cidade, uf)
+  if vizinhos.is_a? String
+    return "Erro: #{vizinhos}" if vizinhos.is_a? String
+  else
+    status 200
+    return "Nenhum assinante encontrado para max_vizinhos='#{max_vizinhos}', rua='#{rua}', numero='#{numero}', cidade='#{cidade}', uf='#{uf}'" if vizinhos.empty?
   
-  "#{str}"
+    str = ""
+    vizinhos.each do |vizinho|
+      str = str + "#{vizinho.dist}<br>#{vizinho.nome}<br>#{vizinho.telefone}<br>#{vizinho.endereco}<br><br>"
+    end
+    
+    "#{str}"
+  end
   
 end

@@ -111,9 +111,12 @@ module Listas
       end
       threads.each { |thr| thr.join }
       @total_assinantes_encontrados = @assinantes.length + @assinantes_duplicados.length
+=begin
+      # Colocar isto como warning, e mesmo assim devolver a resposta. Por enquanto, desabilitar
       if @total_assinantes_encontrados != @total_assinantes_esperados
         fail "#{@total_assinantes_encontrados} assinantes encontrados porem eram esperados #{@total_assinantes_esperados} assinantes"
       end
+=end      
       @total_assinantes_encontrados
     end
 
