@@ -5,8 +5,14 @@
 # => retorna os assinantes mais próximos da rua em vizinhos_proximos.txt
 # Exemplo de uso em outro estado (fornecer uf): listas.rb "humberto de campos" 56 santos sp
 #--
-# http://net.tutsplus.com/tutorials/ruby/an-introduction-to-haml-and-sinatra/
-# http://ididitmyway.heroku.com/past/2011/2/22/really_simple_authentication_in_sinatra/
+=begin
+  Afazeres
+    usar slim e sass ou haml e/ou css | nao funciona!
+      http://ididitmyway.heroku.com/past/2011/7/18/current_pages/
+    autenticar
+      http://ididitmyway.heroku.com/past/2011/2/22/really_simple_authentication_in_sinatra/
+=end
+#++
 require "rubygems"
 require "bundler/setup"
 require 'thin'
