@@ -18,7 +18,7 @@ require_relative '../lib/listas/runner'
 
 
   
-get '/enderecos' do
+get '/endereco' do
 
   max_vizinhos = params[:max_vizinhos].nil? ? 10 : Integer(params[:max_vizinhos])
   rua = params[:rua]
