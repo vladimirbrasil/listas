@@ -41,6 +41,32 @@ class TesteLeitor < Test::Unit::TestCase
       assert_raises { Listas::Leitor.new("").buscar_codigo_cidade('Cidade Inexistente') }
     end
   end
+  context "assinantes" do
+    setup do
+      @mutex = Mutex.new
+      @leitor = Listas::Leitor.new("")
+      #@leitor.sem_mensagens = true
+    end
+    (1..5).each do |n|
+      File.open("teste_node_#{n}.txt", 'r') do |f|
+        node = Nokogiri::HTML(f.read)
+        should "retornar 25 assinantes para a pagina-teste #{n}" do
+          assert_equal(25, @leitor.extrair_assinantes(node, @mutex)) if n < 5
+          assert_equal(20, @leitor.extrair_assinantes(node, @mutex)) if n == 5
+        end
+        should "esperar 120 assinantes para a pagina-teste #{n}" do
+          assert_equal(120, @leitor.extrair_total_assinantes(node))
+        end
+      end
+    end
+#    File.open("C:/Users/Vla/Documents/Ruby/listas/test/teste_item.txt", 'r') do |f|
+    File.open("teste_item.txt", 'r') do |f|
+      node = Nokogiri::HTML(f.read)
+      should "extrair assinante Orlando para o item-teste" do
+        assert_match(/orlando/i, @leitor.extrair_assinante(node).nome)
+      end
+    end
+  end
 end
 
 # ruby -w teste_leitor.rb -n /RunTime/

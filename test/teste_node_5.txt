@@ -1,0 +1,3633 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<meta name="distribution" content="Global">
+<meta name="Googlebot" content="all">
+<meta name="robots" content="all">
+<meta name="author" content="Informa&ccedil;&otilde;es: webmaster@telelistas.net">
+<meta name="Copyright" content="(c) 2000 - 2011 TeleListas.net">
+<meta name="keywords" content="empresas telefone mapa endere&ccedil;o lista CEP telef&ocirc;nica mapas telemar guia brasil telecom pessoas DDD localizar guia mais listas editel consulta p&aacute;ginas amarelas">
+<meta name="description" content="TeleListas.net - Busca por telefones e endere&ccedil;os de empresas, servi&ccedil;os, produtos, profissionais e pessoas. Telefones de todo Brasil. Guias de restaurantes, medicina, autom&oacute;veis e cidad&atilde;o. E mais: mapas digitais, pesquise pre&ccedil;os, medicamentos gen&eacute;ricos, DDD, DDI, CEP. Pesquise por nome, empresa, telefone, ramo de atividade ou endere&ccedil;o. TeleListas.Net">
+<link href="http://static.telelistas.net/css/style.css" rel="stylesheet" type="text/css">
+<link href="http://static.telelistas.net/css/style_form.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+        { lang: 'pt-BR' }
+    </script><script src="http://static.telelistas.net/js/por_script.js"></script><script>
+    document.domain='telelistas.net'; //e.g.: document.domain='microsoft.com'
+	function fillParam(){
+	var theForm1 = document.forms['refina'];
+
+	theForm1.uf_busca.value="rs";
+	theForm1.cod_localidade.value="51062";
+	theForm1.localidade.value="";
+	theForm1.cod_bairro.value="0";
+	theForm1.bairro.value="";
+	theForm1.cod_atividade.value="-1";
+	theForm1.atividade.value="";
+	theForm1.ddd.value="0";
+	theForm1.telefone.value="";
+	theForm1.endereco.value="camelias";
+	theForm1.numero.value="0";
+	theForm1.nome.value="";
+	theForm1.letra.value="";
+	theForm1.pchave.value="";
+	theForm1.pagina.value="5";
+	
+	}
+
+  function Change(pName, pValue){
+  var theForm = document.forms['refina'];
+
+   if (pName == "estado"){
+      theForm.uf_busca.value = pValue;
+//      theForm.uf_auto.value = pValue;
+//      theForm.uf_rest.value = pValue;
+
+      theForm.cod_localidade.value='';
+      theForm.localidade.value='';
+      theForm.cod_bairro.value='';
+      theForm.bairro.value='';
+  	  theForm.letra.value = '';
+	  theForm.pagina.value = '1';
+   }
+   else if (pName == "estado_logradouro"){
+      theForm.uf_busca.value = pValue;
+//      theForm.uf_auto.value = pValue;
+//      theForm.uf_rest.value = pValue;
+
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == "cidade"){
+      theForm.cod_localidade.value=pValue;
+//      theForm.localidade.value=pValue;
+
+      theForm.cod_bairro.value='';
+      theForm.bairro.value='';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'bairro'){
+      theForm.cod_bairro.value=pValue;
+//      theForm.bairro.value=pValue;
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'atividade'){
+      theForm.cod_atividade.value=pValue;
+//      theForm.atividade.value=pValue;
+		theForm.ddd.value='';
+		theForm.telefone.value='';
+		theForm.endereco.value='';
+		theForm.numero.value='';
+		theForm.nome.value='';
+		theForm.pchave.value = '';
+		theForm.btnemail.value = '0';
+		theForm.btnsite.value = '0';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'vejatb'){
+      theForm.orgm.value='7';
+      theForm.cod_atividade.value=pValue;
+//      theForm.atividade.value=pValue;
+		theForm.pchave.value = '';
+		theForm.btnemail.value = '0';
+		theForm.btnsite.value = '0';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'letra'){
+		theForm.letra.value = pValue;
+		theForm.pagina.value = '1';
+	}
+	else if (pName == 'pagina'){
+		theForm.pagina.value = pValue;
+	}
+   else if (pName == 'nome'){
+      theForm.cod_atividade.value='';
+      theForm.atividade.value='';
+		theForm.ddd.value='';
+		theForm.telefone.value='';
+		theForm.endereco.value='';
+		theForm.numero.value='';
+		theForm.nome.value="";
+		theForm.pchave.value = '';
+		theForm.btnemail.value = '0';
+		theForm.btnsite.value = '0';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'completo'){
+		theForm.pchave.value = '';
+		theForm.btnemail.value = '0';
+		theForm.btnsite.value = '0';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else {
+       if (theForm.pchave.value != document.getElementById("refkeyword").value && document.getElementById("refkeyword").value != 'Digite uma palavra' && document.getElementById("refkeyword").disabled==false){
+            theForm.pchave.value = document.getElementById("refkeyword").value;
+        }
+        else if (theForm.btnemail.value == document.getElementById("refbtnemail").value && theForm.btnsite.value == document.getElementById("refbtnsite").value && (document.getElementById("refkeyword").disabled==true || theForm.pchave.value == document.getElementById("refkeyword").value)){
+            alert('N&atilde;o h&aacute; nada para refinar');
+            return false;
+        }
+        
+      if (document.getElementById("refkeyword").value == 'Digite uma palavra')
+         document.getElementById("refkeyword").value = '';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+    }
+		theForm.submit();
+  }
+
+  function maplink(link){
+     if(screen.height > 600)
+        window.open(link, 'Mapa', 'scrollbars=yes,width=670,height=605,resizeable=no,status=yes');
+     else
+        window.open(link, 'Mapa', 'scrollbars=yes,width=670,height=500,resizeable=no,status=yes');
+  }
+
+  function popUpCallFree(idRegistry, url)
+  {
+   window.open(url,'callfree','scrollbars=yes,width=398,height=513,resizeable=no,status=yes,scrollbars=no');
+  }
+
+  function popTorpedo(idRegistry)
+  {
+   window.open('/torpedos/pop_tim.aspx?idrgstr=' + idRegistry,'torpedo','scrollbars=yes,width=466,height=328,resizeable=no,status=yes');
+  }
+
+  function npInstrucoes()
+  {
+  	if (document.getElementById('npInstrucoes').style.display == "none")
+	{
+	document.getElementById('npInstrucoes').style.display = "block";
+	}
+	else 
+	{
+	document.getElementById('npInstrucoes').style.display = "none";
+	}
+  }
+  
+  function npInstrucoesFechar()
+  {
+  	document.getElementById('npInstrucoes').style.display = "none";
+  }
+
+    </script><script type="text/javascript" src="http://static.telelistas.net/js/funcoes.js"></script><script type="text/javascript" src="http://static.telelistas.net/js/yahoo-dom-event.js"></script><script type="text/javascript" src="http://static.telelistas.net/js/connection-min.js"></script><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-512146-4");
+pageTracker._setDomainName(".telelistas.net");
+pageTracker._trackPageview();
+} catch(err) {}
+
+		
+function masterOnLoad() {
+  if (typeof(windowOnLoad) == "function")
+	windowOnLoad();
+  if (typeof(fillParam) == "function")
+	fillParam();
+			}
+</script><script language="Javascript" type="text/javascript">
+ if ( navigator.appName.indexOf("Microsoft") == -1 )
+ {   
+   document.write('<link rel="search" type="application/opensearchdescription+xml" title="Telelistas.net" href="http://www.telelistas.net/Busca_Firefox.xml" />');  
+ } 
+   
+</script><title>
+	TeleListas.net: Lista Telef&ocirc;nica - Telefones de empresas e pessoas - Brasil - Endere&ccedil;o: camelias - Canoas - RS - 5 - TeleListas.net
+</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="masterOnLoad()">
+<!-- Begin comScore UDM code 1.1104.26 -->
+<script type="text/javascript">
+    function comScore(C) {
+        var A = "comScore", j = document, y = j.location, B = "", z = "undefined", x = 2048, D, v, i, w, c = "characterSet", l = "defaultCharset", u = (typeof encodeURIComponent != z ? encodeURIComponent : escape);
+        if (j.cookie.indexOf(A + "=") != -1) { i = j.cookie.split(";"); for (w = 0, y = i.length; w < y; w++) { var d = i[w].indexOf(A + "="); if (d != -1) { B = "&" + unescape(i[w].substring(d + A.length + 1)) } } } C = C + "&ns__t=" + (new Date().getTime());
+        C = C + "&ns_c=" + (j[c] ? j[c] : (j[l] ? j[l] : "")) + "&c8=" + u(j.title) + B + "&c7=" + u(y && y.href ? y.href : j.URL) + "&c9=" + u(j.referrer); if (C.length > x && C.indexOf("&") > 0) {
+            D = C.substr(0, x - 8).lastIndexOf("&");
+            C = (C.substring(0, D) + "&ns_cut=" + u(C.substring(D + 1))).substr(0, x)
+        } if (j.images) { v = new Image(); if (typeof ns_p == z) { ns_p = v } v.src = C } else { j.write('<p><img src="' + C + '" height="1" width="1" alt="*"/></p>') } 
+    } comScore("http" + (document.location.href.charAt(4) == "s" ? "s://sb" : "://b") + ".scorecardresearch.com/p?c1=2&c2=8433347");
+</script><noscript><p><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=8433347" height="1" width="1" alt="*"></p></noscript>
+<!-- End comScore UDM code -->
+
+
+
+    
+    <table width="980" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr valign="top">
+<td colspan="7" align="center">
+                            
+
+<script language="javascript">
+
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+
+function NormalizaEspacos(obj){
+  obj.value = obj.value.replace(/\s+/g," ");
+  obj.value = obj.value.replace(/^\s+/,"");
+  obj.value = obj.value.replace(/\s+$/,"");
+}
+</script><div id="ctl00_Topo_pnlTopoInterno">
+	
+
+    <script language="javascript">
+		var userIsLogged;
+		var search = "endereco";
+		var debug = false;
+		userIsLogged = true;
+
+		//Exibe a caixa de busca informada, escondendo a anteriormente exibida
+		function exibeCaixaBuscaInt(caixa) {
+		    if (caixa == "atual")
+		        return;
+			var objCaixa = document.getElementById("cx_" + caixa + "_int");
+			
+			if (caixa != "assunto" && (userIsLogged || caixa == "palavrachave" || caixa == "pessoa")) {
+				escondeCaixasBuscaInt(); //esconde todas as caixas
+			    if (caixa != "assunto")
+			        objCaixa.style.display = "block";
+    				
+			    switch (caixa) {
+				    case "telefone":
+					    document.frmTelefone.ddd.focus();
+					    break;
+				    case "endereco":
+					    document.frmEndereco.endereco.focus();
+					    break;
+				    case "pessoa":
+					    document.frmPessoa.nome.focus();
+					    break;
+				    case "assunto":
+					    location.href = "http://www.telelistas.net/templates/busca_assunto.aspx";
+					    break;
+				    default:
+					    document.frmPalavrachave.atividade.focus();
+			    }
+			}
+			else {
+				if (caixa == "telefone")
+					location.href = "http://www.telelistas.net/templates/form_login.aspx?search=telefone&returnurl=/?search=telefone";
+				else if (caixa == "endereco")
+					location.href = "http://www.telelistas.net/templates/form_login.aspx?search=endereco&returnurl=/?search=endereco";
+				else if (caixa == "assunto")
+					location.href = "http://www.telelistas.net/templates/busca_assunto.aspx";
+			}
+		}
+		
+		//Esconde todas as caixas de busca
+		function escondeCaixasBuscaInt() {
+			document.getElementById("cx_telefone_int").style.display = "none";
+			document.getElementById("cx_endereco_int").style.display = "none";
+			document.getElementById("cx_palavrachave_int").style.display = "none";
+			document.getElementById("cx_pessoa_int").style.display = "none";
+		}
+		
+	function validaFormPalavraChave(form){
+	    var estadosArray = new Array("", "Acre","Alagoas","Amazonas","Amap&aacute;","Bahia","Cear&aacute;","Distrito Federal","Esp&iacute;rito Santo","Goi&aacute;s","Maranh&atilde;o","Minas Gerais","Mato Grosso do Sul","Mato Grosso","Par&aacute;","Para&iacute;ba","Pernambuco","Piau&iacute;","Paran&aacute;","Rio de Janeiro","Rio Grande do Norte","Rond&ocirc;nia","Roraima","Rio Grande do Sul","Santa Catarina","Sergipe","S&atilde;o Paulo","Tocantins");
+		if ((form.nome.value=='') && (form.atividade.value=='')){
+			alert('Preencha o campo Palavra-Chave ou o campo Nome.');
+			form.atividade.focus();
+			return false;
+		}
+		
+		if ((form.cod_localidade.value != '') && (form.cod_localidade.value != '0') && (form.uf_busca.selectedIndex ==0)){
+			alert('Selecione um estado.');
+			form.uf_busca.focus();
+			return false;
+		}
+		var localizacao='';
+		if ($('pch_localidade_select').options[$('pch_localidade_select').selectedIndex].value != ''){
+		    localizacao = $('pch_localidade_select').options[$('pch_localidade_select').selectedIndex].text;
+		    }
+		else if ($('uf_busca').selectedIndex > 0)
+		    localizacao = estadosArray[$('uf_busca').selectedIndex];
+		form.q.value=form.atividade.value;
+		if (form.q.value != '' && localizacao != '')
+		    form.q.value += '+' + localizacao;
+	}
+
+	function validaFormEndereco(form){
+		if (form.endereco.value==''){
+			alert('Preencha o campo logradouro.');
+			form.endereco.focus();
+			return false;
+		}
+		
+		if (form.numero.value != ''){
+			if (!form.numero.value.match(/\d+/)){
+				alert('Numero incorreto.');
+				form.numero.select();
+				return false;
+			}
+		}
+		
+		if (form.uf_busca.selectedIndex==0){
+			alert('Selecione o estado.');
+			form.uf_busca.focus();
+			return false;
+		}
+		
+		if (form.cod_localidade.value == '0' || form.cod_localidade.value == ''){
+			alert('Selecione a cidade.');
+			return false;
+		}
+	}
+
+	function validaFormTelefone(form){
+		if (form.telefone.value==''){
+			alert('Preencha o campo telefone.');
+			form.telefone.focus();
+			return false;
+		}
+		else{
+			if (form.telefone.value.match(/^(0800|\d{3,4})\-*\d\d\d\d$/) || form.telefone.value.match(/^0(3|8)00\-*\d{6,9}$/)){
+				if (form.telefone.value.match(/^0800/)){
+					form.ddd.value = '';
+				}
+			}
+			else{
+				alert ('Telefone incorreto.');
+				form.telefone.select();
+				return false;
+			}
+		}
+		return true;
+	}
+
+	function validaFormPessoa(form){
+		if ((form.nome.value=='')){
+			alert('Preencha o campo Nome.');
+			form.nome.focus();
+			return false;
+		}
+	}
+    </script><script src="http://static.telelistas.net/js/caixa_busca.js" type="text/javascript"></script><div id="topo_portal_global">
+        <div class="logoWrapper">
+            <div id="logo_topo">
+                <a href="http://www.telelistas.net/" title="TeleListas.net">
+                    <img src="http://img.telelistas.net/img/logo_topo_portal_b_01.gif" width="240" height="47" border="0" alt="TeleListas.net"></a>
+</div>
+            <div id="banner_topo">
+                <span class="banner_topo">
+                    <a href="/templates/banner_redirect.aspx?idcntd=11170&amp;idgrp=10997&amp;url=http://www.telelistas.net/mobile"><img src="http://cms.telelistas.net/banners/telelistas/banner-app-smartphones.gif" width="728" height="90" border="0"></a>
+                </span>
+            </div>
+        </div>
+        <!--/logoWrapper-->
+        <div id="topo_portal">
+            <div id="menu_topo_portal">
+                <ul class="menu_topo_portal">
+<li id="ctl00_Topo_liBuscaInterno" class="menu_topo_portal_on"><a alt="Ache empresas, profissionais e pessoas" href="http://www.telelistas.net/" target="_self" title="Ache empresas, profissionais e pessoas">
+                        Busca</a></li>
+                    <li id="ctl00_Topo_liBuscaLocalInterno" class="menu_topo_portal_off"><a alt="Ache empresas perto de voc&ecirc;" href="http://www.telelistas.net/busca_local/busca_local.aspx" target="_self" title="Ache empresas perto de voc&ecirc;">
+                        Mapa com Busca</a></li>
+                    <li id="ctl00_Topo_liPesquisePrecosInterno" class="menu_topo_portal_off"><a alt="Pesquise Pre&ccedil;os" href="http://www.pesquiseprecos.telelistas.net/" target="_self" title="Pesquise Pre&ccedil;os">
+                        Pesquise Pre&ccedil;os</a></li>
+                    <li class="menu_topo_portal_off" id="liPesquisePrecos"><a href="http://telelistas.mundi.com.br" rel="nofollow" target="_self" alt="TeleListas.net Viagens" title="TeleListas.net Viagens">
+                        Viagens</a></li>
+                    <li id="ctl00_Topo_liImoveis" class="menu_topo_portal_off"><a alt="TeleListas.net Im&oacute;veis" href="http://telelistas.imovelweb.com.br/" target="_self" title="Im&oacute;veis, Casas e apartamentos para compra, venda e aluguel &#150; TeleListas.net Im&oacute;veis">
+                        Im&oacute;veis</a></li>
+                    <li class="menu_topo_portal_off" id="liOfertas"><a href="http://www.ophertas.net/%20" target="_blank" alt="Ophertas" title="Ophertas">Ophertas <span class="novaSecao">(novo)</span></a></li>
+                    <!--<li id="ctl00_Topo_liAnuncieInterno" class="menu_topo_portal_off"><a alt="Anuncie no TeleListas.net" href="http://www.telelistas.net/templates/anuncie.aspx" target="_top" title="Anuncie no TeleListas.net">Anuncie <img id="ctl00_Topo_imgAnuncieInterno" src="http://img.telelistas.net/img/anuncie_destaque.gif" style="border-width:0px;" /></a></li> -->
+                </ul>
+<div id="divanuncieaqui">
+                                     <a class="anuncieaqui" href="http://www.telelistas.net/templates/anuncie.aspx" target="_self" title="Cadastre gr&aacute;tis sua empresa">Cadastre gr&aacute;tis sua empresa</a>
+                     <a class="anuncieaqui" href="http://www.ecommerce.telelistas.net/" target="_self" title="Anuncie">Anuncie</a>
+                     <a class="anuncieaqui" href="http://www.telelistas.net/templates/telelistas_sites.aspx" target="_self" title="Tenha um site">Tenha um site</a>   
+                </div>
+                
+                <div id="outras-buscas" style="display: block;">
+                    <span class="field_formint_outras_buscas">
+                        <label class="label_formint" for="outrasbuscaspch">
+                            Outras buscas &nbsp;</label>
+                        <select id="outrasbuscaspch" class="formint_assunto_topo" name="outrasbuscas" onchange="exibeCaixaBuscaInt(this.value);this.selectedIndex=0;" tabindex="4" title="Outras buscas"><option selected value="atual">Selecione</option>
+<option value="palavrachave">Palavra-Chave/Nome</option>
+<option value="assunto">Assunto</option>
+<option value="endereco">Endere&ccedil;o</option>
+<option value="pessoa">Pessoas</option>
+<option value="telefone">Telefone</option></select></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="caixa_interna">
+        <div id="cx_palavrachave_int" style="display: none;">
+            <form action="http://www.telelistas.net/templates/resultado_busca.aspx" name="frmPalavrachave" onsubmit="return validaFormPalavraChave(this);" style="padding: 0;
+            margin: 0;">
+            <span class="field_formint_palachave_nome">
+                <input type="hidden" name="q" value=""><input name="orgm" type="hidden" value="8"><input id="pch_cod_localidade" name="cod_localidade" type="hidden" value="51062"><input id="pch_cod_bairro" name="cod_bairro" type="hidden" value=""><label class="label_formint" for="atividade">
+                    <strong>Palavra-chave</strong></label>
+                <input id="atividade" class="formint_palachave_nome" name="atividade" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);" tabindex="1" title="Palavra-Chave" type="text" value=""></span><span class="field_formint_palachave_nome">
+                <label class="label_formint" for="nome_palachave">
+                    <strong>Nome</strong></label>
+                <input id="nome_palachave" class="formint_palachave_nome" name="nome" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);" tabindex="2" title="Nome" type="text" value=""></span><span class="field_formint_estado">
+                <label class="label_formint" for="EstadosPch">
+                    <strong>UF</strong></label>
+                <select name="uf_busca" id="uf_busca" onchange="alteraUFInterna(this, 'pch_localidade_select', $('pch_cod_localidade'), $('pch_loc'), 'pch_bairro_select', $('pch_cod_bairro'), $('pch_bairro'));" title="Estado" class="formint_estado"><option value="br">BR</option>
+<option value="ac">AC</option>
+<option value="al">AL</option>
+<option value="am">AM</option>
+<option value="ap">AP</option>
+<option value="ba">BA</option>
+<option value="ce">CE</option>
+<option value="df">DF</option>
+<option value="es">ES</option>
+<option value="go">GO</option>
+<option value="ma">MA</option>
+<option value="mg">MG</option>
+<option value="ms">MS</option>
+<option value="mt">MT</option>
+<option value="pa">PA</option>
+<option value="pb">PB</option>
+<option value="pe">PE</option>
+<option value="pi">PI</option>
+<option value="pr">PR</option>
+<option value="rj">RJ</option>
+<option value="rn">RN</option>
+<option value="ro">RO</option>
+<option value="rr">RR</option>
+<option selected value="rs">RS</option>
+<option value="sc">SC</option>
+<option value="se">SE</option>
+<option value="sp">SP</option>
+<option value="to">TO</option></select></span><span class="field_formint_cidade">
+                <label class="label_formint" for="pch_localidade_select">
+                    <strong>Cidade</strong></label>
+                <div id="pch_loc">
+                    <select id="pch_localidade_select" class="busca_interna" name="localidade_select"><option value="">Selecione</option></select>
+</div>
+            </span><span class="field_formint_bairro">
+                <label class="label_formint" for="pch_bairro_select">
+                    <strong>Bairro</strong></label>
+                <div id="pch_bairro">
+                    <select id="pch_bairro_select" class="busca_interna_bairro" name="bairro_select"><option value="">Selecione</option></select>
+</div>
+            </span><span class="field_formint_buttom_int">
+                <input alt="Buscar" border="0" class="botao_famarelo" src="http://img.telelistas.net/img/por_bot_buscar_int.gif" title="Buscar" type="image"></span>
+            </form>
+        </div>
+
+        <script>
+            alteraUFInterna(document.frmPalavrachave.uf_busca, 'pch_localidade_select', $('pch_cod_localidade'), $('pch_loc'), 'pch_bairro_select', $('pch_cod_bairro'), $('pch_bairro'));
+        </script><div id="cx_endereco_int" style="display: block;">
+            
+            <form action="http://www.telelistas.net/templates/resultado_busca.aspx" name="frmEndereco" onsubmit="return validaFormEndereco(this);" style="padding: 0;
+            margin: 0;">
+            <input name="orgm" type="hidden" value="8"><input id="end_cod_localidade" name="cod_localidade" type="hidden" value="51062"><span class="field_formint_logradouro">
+                <label class="label_formint" for="endereco">
+                    <strong>Nome do Logradouro</strong></label>
+                <input id="endereco" class="formint_logradouro" name="endereco" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);" tabindex="1" title="Logradouro" type="text" value="camelias"></span><span class="field_formint_numero">
+                <label class="label_formint" for="numero">
+                    <strong>N&ordm;</strong></label>
+                <input id="numero" class="formint_numero" name="numero" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);" tabindex="2" title="Numero" type="text" value=""></span><span class="field_formint_estado">
+                <label class="label_formint" for="EstadosEnd">
+                    <strong>UF</strong></label>
+                <select name="uf_busca" id="uf_busca" onchange="alteraUF(this, 'end_localidade_select', $('end_cod_localidade'), $('end_loc'));" title="Estado" class="formint_estado"><option value="br">BR</option>
+<option value="ac">AC</option>
+<option value="al">AL</option>
+<option value="am">AM</option>
+<option value="ap">AP</option>
+<option value="ba">BA</option>
+<option value="ce">CE</option>
+<option value="df">DF</option>
+<option value="es">ES</option>
+<option value="go">GO</option>
+<option value="ma">MA</option>
+<option value="mg">MG</option>
+<option value="ms">MS</option>
+<option value="mt">MT</option>
+<option value="pa">PA</option>
+<option value="pb">PB</option>
+<option value="pe">PE</option>
+<option value="pi">PI</option>
+<option value="pr">PR</option>
+<option value="rj">RJ</option>
+<option value="rn">RN</option>
+<option value="ro">RO</option>
+<option value="rr">RR</option>
+<option selected value="rs">RS</option>
+<option value="sc">SC</option>
+<option value="se">SE</option>
+<option value="sp">SP</option>
+<option value="to">TO</option></select></span><span class="field_formint_cidade">
+                <label class="label_formint" for="end_localidade_select">
+                    <strong>Cidade</strong></label>
+                <div id="end_loc">
+                    <select id="end_localidade_select" class="busca_interna" name="localidade_select"><option value="">Selecione</option></select>
+</div>
+            </span><span class="field_formint_buttom">
+                <input alt="Buscar" border="0" class="botao_famarelo" src="http://img.telelistas.net/img/por_bot_buscar.gif" title="Buscar" type="image"></span>
+            
+            </form>
+            
+        </div>
+        
+
+        <script language="javascript" type="text/javascript">
+            alteraUF(document.frmEndereco.uf_busca, 'end_localidade_select', $('end_cod_localidade'), $('end_loc'));
+        </script><div id="cx_telefone_int" style="display: none;">
+            
+            <form action="http://www.telelistas.net/templates/resultado_busca.aspx" method="get" name="frmTelefone" onsubmit="return validaFormTelefone(this);" style="padding: 0; margin: 0;">
+            <input name="orgm" type="hidden" value="8"><span class="field_formint_numero">
+                <label class="label_formint" for="ddd">
+                    <strong>DDD</strong></label>
+                <input id="ddd" class="formint_numero" name="ddd" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);" tabindex="1" title="DDD" type="text" value=""></span><span class="field_formint_palachave_nome">
+                <label class="label_formint" for="telefone">
+                    <strong>Telefone</strong><span class="text_labelmenor_newbox"> (Comercial)</span></label>
+                <input id="telefone" class="formint_palachave_nome" name="telefone" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);" tabindex="2" title="Telefone" type="text" value=""></span><span class="field_formint_estado2">
+                <label class="label_formint" for="EstadosTel">
+                    <strong>Estado</strong></label>
+                <select name="uf_busca" id="uf_busca" onchange="" title="Estado" class="formint_estado2"><option value="br">Todo Brasil</option>
+<option value="ac">Acre</option>
+<option value="al">Alagoas</option>
+<option value="ap">Amap&aacute;</option>
+<option value="am">Amazonas</option>
+<option value="ba">Bahia</option>
+<option value="ce">Cear&aacute;</option>
+<option value="df">Distrito Federal</option>
+<option value="es">Esp&iacute;rito Santo</option>
+<option value="go">Goi&aacute;s</option>
+<option value="ma">Maranh&atilde;o</option>
+<option value="mt">Mato Grosso</option>
+<option value="ms">Mato Grosso do Sul</option>
+<option value="mg">Minas Gerais</option>
+<option value="pa">Par&aacute;</option>
+<option value="pb">Para&iacute;ba</option>
+<option value="pr">Paran&aacute;</option>
+<option value="pe">Pernambuco</option>
+<option value="pi">Piau&iacute;</option>
+<option value="rj">Rio de Janeiro</option>
+<option value="rn">Rio Grande do Norte</option>
+<option selected value="rs">Rio Grande do Sul</option>
+<option value="ro">Rond&ocirc;nia</option>
+<option value="rr">Roraima</option>
+<option value="sc">Santa Catarina</option>
+<option value="sp">S&atilde;o Paulo</option>
+<option value="se">Sergipe</option>
+<option value="to">Tocantins</option></select></span><span class="field_formint_buttom">
+                <input type="image" alt="Buscar" border="0" class="botao_famarelo" src="http://img.telelistas.net/img/por_bot_buscar.gif" title="Buscar"></span>
+            
+            </form>
+            
+        </div>
+        <div id="cx_pessoa_int" style="display: none;">
+            <form action="http://www.telelistas.net/templates/resultado_busca.aspx" method="get" name="frmPessoa" onsubmit="return validaFormPessoa(this);" style="padding: 0; margin: 0;" target="_parent">
+            <input name="orgm" type="hidden" value="8"><input id="pes_cod_localidade" name="cod_localidade" type="hidden" value="51062"><input id="pes_cod_bairro" name="cod_bairro" type="hidden" value=""><input id="residencial" name="residencial" type="hidden" value="1"><span class="field_formint_nome">
+                <label class="label_formint" for="nome_pes">
+                    <strong>Nome</strong></label>
+                <input id="nome_pes" class="formint_nome" name="nome" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);" tabindex="1" title="Nome" type="text" value=""></span><span class="field_formint_estado">
+                <label class="label_formint" for="EstadosPes">
+                    <strong>UF</strong></label>
+                <select name="uf_busca" id="uf_busca" onchange="alteraUFInterna(this, 'pes_localidade_select', $('pes_cod_localidade'), $('pes_loc'), 'pes_bairro_select', $('pes_cod_bairro'), $('pes_bairro'));" title="Estado" class="formint_estado"><option value="br">BR</option>
+<option value="ac">AC</option>
+<option value="al">AL</option>
+<option value="am">AM</option>
+<option value="ap">AP</option>
+<option value="ba">BA</option>
+<option value="ce">CE</option>
+<option value="df">DF</option>
+<option value="es">ES</option>
+<option value="go">GO</option>
+<option value="ma">MA</option>
+<option value="mg">MG</option>
+<option value="ms">MS</option>
+<option value="mt">MT</option>
+<option value="pa">PA</option>
+<option value="pb">PB</option>
+<option value="pe">PE</option>
+<option value="pi">PI</option>
+<option value="pr">PR</option>
+<option value="rj">RJ</option>
+<option value="rn">RN</option>
+<option value="ro">RO</option>
+<option value="rr">RR</option>
+<option selected value="rs">RS</option>
+<option value="sc">SC</option>
+<option value="se">SE</option>
+<option value="sp">SP</option>
+<option value="to">TO</option></select></span><span class="field_formint_cidade">
+                <label class="label_formint" for="pes_localidade_select">
+                    <strong>Cidade</strong></label>
+                <div id="pes_loc">
+                    <select id="pes_localidade_select" class="busca_interna" name="localidade_select"><option value="">Selecione</option></select>
+</div>
+            </span><span class="field_formint_bairro">
+                <label class="label_formint" for="pes_bairro_select">
+                    <strong>Bairro</strong></label>
+                <div id="pes_bairro">
+                    <select id="pes_bairro_select" class="busca_interna_bairro" name="bairro_select"><option value="">Selecione</option></select>
+</div>
+            </span><span class="field_formint_buttom_int">
+                <input alt="Buscar" border="0" class="botao_famarelo" src="http://img.telelistas.net/img/por_bot_buscar_int.gif" title="Buscar" type="image"></span>
+            </form>
+        </div>
+
+        <script language="javascript" type="text/javascript">
+            alteraUFInterna(document.frmPessoa.uf_busca, 'pes_localidade_select', $('pes_cod_localidade'), $('pes_loc'), 'pes_bairro_select', $('pes_cod_bairro'), $('pes_bairro'));
+        </script>
+</div>
+
+</div>
+
+			</td>
+		</tr>
+<tr>
+<td colspan="7" height="10">
+        </td>
+    </tr>
+<tr>
+<td width="10">
+            &nbsp;
+        </td>
+        <td width="152" align="center" valign="top">
+            <table width="152" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+                        <div id="ctl00_Content_Refino">
+	
+<script>
+   function Refino(obj){
+      var theForm = document.forms['refina'];
+      var paramName = obj.name.substring(3, obj.name.length);
+      
+      if (obj.checked)
+         theForm.elements[paramName].value=1;
+      else
+         theForm.elements[paramName].value=0;
+   }
+</script><table width="152" border="0" cellpadding="1" cellspacing="0" bgcolor="BDCAD7"><tr>
+<td><table width="150" border="0" cellpadding="0" cellspacing="0" bgcolor="E0E6EC">
+<tr>
+<td align="center" valign="top"><img height="18" src="http://img.telelistas.net/img/por_tcaixa_refina.gif" title="Avan&ccedil;ado" width="150"></td>
+        </tr>
+<tr>
+<td height="7" align="center"></td>
+        </tr>
+<tr>
+<td align="center" valign="top"><table width="136" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="2" class="text_medio">Ver <strong>apenas</strong> 
+                  resultados contendo:</td>
+              </tr>
+<tr>
+<td width="20" valign="middle" class="text_medio"><input id="refbtnsite" class="check_refina" name="refbtnsite" onclick="Refino(this);" type="checkbox" value="0"></td>
+                <td width="116" valign="middle" class="text_medio">
+<label for="refbtnsite">Site</label>
+</td>
+              </tr>
+<tr>
+<td width="20" valign="middle" class="text_medio"> <input id="refbtnemail" class="check_refina" name="refbtnemail" onclick="Refino(this);" type="checkbox" value="0">
+</td>
+                <td width="116" valign="middle" class="text_medio"> <label for="refbtnemail">E-mail</label>
+</td>
+              </tr>
+<tr>
+<td width="20" valign="middle" class="text_medio"> 
+                  <input id="refbtnpalvra" class="check_refina" onclick='if(document.getElementById("refkeyword").disabled==false){document.getElementById("refkeyword").disabled=true;document.getElementById("refkeyword").style.background="#F1F1F1";}else{document.getElementById("refkeyword").disabled=false;document.getElementById("refkeyword").style.background="#fff";}' name="refbtnpalavra" type="checkbox" value="1">
+</td>
+                <td width="116" valign="middle" class="text_medio"> 
+                  <label for="refbtnpalavra">Palavra(s):</label>
+</td>
+              </tr>
+<tr>
+<td colspan="2"><input id="refkeyword" disabled name="refkeyword" type="text" class="refina" value="Digite uma palavra" onfocus="if (this.value=='Digite uma palavra') this.value='';" onblur="if (this.value=='') this.value='Digite uma palavra';"></td>
+              </tr>
+<tr>
+<td height="30" colspan="2" align="center" valign="middle"><input border="0" height="18" onclick="Change();" src="http://img.telelistas.net/img/por_bot_refina.gif" title="Refinar" type="image" width="88"></td>
+              </tr>
+</table></td>
+        </tr>
+</table></td>
+  </tr></table>
+</div>
+                    </td>
+                </tr>
+<tr>
+<td height="10">
+                    </td>
+                </tr>
+<tr>
+<td>
+                        <div id="ctl00_Content_VejaTb">
+
+</div>
+                    </td>
+                </tr>
+<tr>
+<td align="center" valign="top">
+                        
+<!--inicio menu guias-->
+<div id="menu_portal">
+			<ul>
+<li class="menucaption">Guias Especiais</li>
+				<li><a href="/busca_local/busca_local.aspx" title="Mapas e Rotas" target="_self">Mapas &amp; Rotas</a></li>
+				<li><a href="http://telelistas.mundi.com.br" rel="nofollow" title="TeleListas.net Viagens" target="_self">Turismo</a></li>
+				<li><a href="/guias/restaurante/index.aspx" title="Guia de Restaurantes" target="_self">Restaurantes</a></li>
+				<li><a href="/guias/automoveis/index.aspx" title="Guia de Autom&oacute;veis" target="_self">Autom&oacute;veis</a></li>
+				<li><a href="/guias/medsaude/index.aspx" title="Guia de Medicina e Sa&uacute;de" target="_self">Medicina e Sa&uacute;de</a></li>
+				<li><a href="/templates/resultado_busca.aspx?q=24&amp;orgm=0&amp;cod_localidade=&amp;atividade=24&amp;nome=&amp;uf_busca=br" title="Guia 24 Horas" target="_self">24 Horas</a></li>
+				<li><a href="/guias/cidadao/index.aspx" title="Guia do Cidad&atilde;o">Cidad&atilde;o</a></li>
+				<li><a href="/templates/telefones_uteis.aspx" title="Telefones &Uacute;teis">Telefones &Uacute;teis</a></li>
+				<li><a href="/templates/classificado.aspx" title="Classificados" target="_self">Classificados</a></li>
+			</ul>
+</div>	
+
+<!--fim_menu_guias-->
+                    </td>
+                </tr>
+<tr>
+<td height="10">
+                    </td>
+                </tr>
+<tr>
+<td align="center" valign="top">
+                        
+
+<div id="menu_portal2">
+ <ul>
+<li class="menucaption">Meu TeleListas</li>
+  <li><a href="/templates/promocoes.aspx" title="Promo&ccedil;&otilde;es TeleListas.net" target="_self">Promo&ccedil;&otilde;es</a></li>
+  <li><a href="/templates/form_login.aspx?ReturnUrl=%2fsecurityfiles%2fmeu_telelistas.aspx" title="Meu Cadastro" target="_self" rel="nofollow">Login e Cadastro</a></li>
+  <li><a href="/templates/toolbar.aspx" title="Toolbar TeleListas.net" target="_self">Toolbar</a></li>
+  <li><a href="/templates/busca_celular.aspx" title="Busca no Celular" target="_self">Busca no Celular</a></li>
+  <li><a href="/templates/telesite.aspx" title="TeleListas no seu site" target="_self">Busca no seu site</a></li>
+  <li><a href="/templates/form_fale.aspx" title="Fale Conosco" target="_self" rel="nofollow">Fale Conosco</a></li>
+ </ul>
+</div>
+<!--[if !IE]>topo do infoplus com servicos e abas<![endif]-->	
+<!--
+<div style="clear:both;"></div>
+<div style="margin:10px 0 0 0; text-align:left;">
+	
+		<script type="text/javascript">var addthis_pub="anipet";
+		var addthis_options = 'twitter, google, yahoobkm, facebook, live, digg, linkedin, more';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php?v=20" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/lg-bookmark-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
+</div>	 -->
+<!--[if !IE]>topo do infoplus com servicos e abas<![endif]-->
+                    </td>
+                </tr>
+</table>
+</td>
+        <td width="10">
+        </td>
+        <td width="468" valign="top" align="center">
+            <table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" valign="top" bgcolor="F4F8FA">
+                        <div id="ctl00_Content_LocaGeo">
+	
+
+<script>
+    function RestService(obj) {
+        var theForm = document.forms['refina'];
+        var paramName = obj.name.substring(3, obj.name.length);
+
+        if (obj.checked)
+            theForm.elements[paramName].value = 1;
+        else
+            theForm.elements[paramName].value = 0;
+    }
+
+    function toggle() {
+        var texto = document.getElementById("textoAtividade");
+        if (texto.style.display == 'none') {
+            texto.style.display = '';
+        }
+        else {
+            texto.style.display = 'none';
+        }
+    }
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="20" valign="top" background="http://img.telelistas.net/img/base_migalha_registro.gif">
+            <h1 style="line-height: normal; padding: 2px 0; font-size: 12px; margin: 0; font-weight: normal;">
+                &nbsp;&nbsp;<a class="caminho_registro" target="_self" href="/">Home</a><img src="http://img.telelistas.net/img/por_seta_caminho.gif" width="19" height="7"><span class="texto_caminho_registro">Busca:
+                        camelias
+                        (120)</span>
+</h1>
+        </td>
+    </tr>
+<form id="refina" action="/templates/resultado_busca.aspx" method="post" name="refina">
+    <input type="hidden" name="uf_busca" value="rs"><input type="hidden" name="pag_resultado" value="1"><input type="hidden" name="orgm" value="8"><input type="hidden" name="localidade" value=""><input type="hidden" name="cod_localidade" value="51062"><input type="hidden" name="bairro" value=""><input type="hidden" name="cod_bairro" value="0"><input type="hidden" name="pagina" value="5"><input type="hidden" name="atividade" value=""><input type="hidden" name="cod_atividade" value="-1"><input type="hidden" name="nome" value=""><input type="hidden" name="endereco" value="camelias"><input type="hidden" name="numero" value="0"><input type="hidden" name="ddd" value="0"><input type="hidden" name="telefone" value=""><input type="hidden" name="residencial" value="0"><input type="hidden" name="comercial" value="0"><input type="hidden" name="btnemail" value="0"><input type="hidden" name="btnsite" value="0"><input type="hidden" name="pchave" value=""><input type="hidden" name="letra" value=""><input type="hidden" name="pcount" value="25"><input type="hidden" name="randsort" value="1094595695"><input type="hidden" name="resultado_letras" value="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,R,S,T,V,W"><input type="hidden" name="cod_assunto" value="">
+</form>
+    <div id="marca_registrada" style="display: none;">
+        <p>
+            <span id="palavra_chave"></span>&nbsp;&eacute; uma marca registrada.<br>
+            Procure nos itens abaixo</p>
+    </div>
+    
+    <tr>
+<td height="10">
+        </td>
+    </tr>
+<tr>
+<td align="center" valign="bottom">
+            <table width="468" height="20" border="0" cellpadding="0" cellspacing="0"><tr>
+<td width="26" height="20" align="center" valign="middle" class="text_medio">
+                        0-9
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'A');return false;">
+                            A</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'B');return false;">
+                            B</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'C');return false;">
+                            C</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'D');return false;">
+                            D</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'E');return false;">
+                            E</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'F');return false;">
+                            F</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'G');return false;">
+                            G</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'H');return false;">
+                            H</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'I');return false;">
+                            I</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'J');return false;">
+                            J</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'K');return false;">
+                            K</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'L');return false;">
+                            L</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'M');return false;">
+                            M</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'N');return false;">
+                            N</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'O');return false;">
+                            O</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'P');return false;">
+                            P</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        Q
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'R');return false;">
+                            R</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'S');return false;">
+                            S</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'T');return false;">
+                            T</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        U
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'V');return false;">
+                            V</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        <a class="azddd" href="#" onclick="Change('letra', 'W');return false;">
+                            W</a>
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        X
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        Y
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        Z
+                    </td>
+                    
+                </tr></table>
+</td>
+    </tr>
+<tr></tr>
+</table>
+<!-- fim caixa_locageo -->
+</div>
+                    </td>
+                </tr>
+<tr>
+<td align="left" bgcolor="F4F8FA" class="text_medio_busca">
+                        
+                    </td>
+                </tr>
+<tr>
+<td height="5" bgcolor="F4F8FA">
+                    </td>
+                </tr>
+<tr>
+<td height="10">
+                    </td>
+                </tr>
+<tr>
+<td height="10">
+                    </td>
+                </tr>
+<tr>
+<td align="center" valign="top">
+            <div id="ctl00_Content_Regs">
+	
+
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/orlando+paulo+couto+daneze--canoas-rs-178790253/?q=">
+                                Orlando Paulo Couto Daneze</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/orlando+paulo+couto+daneze--canoas-rs-178790253"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 375<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178790253&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2forlando%2bpaulo%2bcouto%2bdaneze--canoas-rs-178790253%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178790253&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2forlando%2bpaulo%2bcouto%2bdaneze--canoas-rs-178790253%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178790253');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Forlando+paulo+couto+daneze--canoas-rs-178790253');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/orlando+paulo+couto+daneze--canoas-rs-178790253','Orlando Paulo Couto Daneze','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/orlando+paulo+couto+daneze--canoas-rs-178790253"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/paulo+ricardo+santos+da+silva--canoas-rs-178795254/?q=">
+                                Paulo Ricardo Santos da Silva</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/paulo+ricardo+santos+da+silva--canoas-rs-178795254"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 182<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178795254&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fpaulo%2bricardo%2bsantos%2bda%2bsilva--canoas-rs-178795254%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178795254&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fpaulo%2bricardo%2bsantos%2bda%2bsilva--canoas-rs-178795254%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178795254');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fpaulo+ricardo+santos+da+silva--canoas-rs-178795254');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/paulo+ricardo+santos+da+silva--canoas-rs-178795254','Paulo Ricardo Santos da Silva','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/paulo+ricardo+santos+da+silva--canoas-rs-178795254"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/paulo+roberto+battaglin--canoas-rs-178795442/?q=">
+                                Paulo Roberto Battaglin</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/paulo+roberto+battaglin--canoas-rs-178795442"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 643<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178795442&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fpaulo%2broberto%2bbattaglin--canoas-rs-178795442%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178795442&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fpaulo%2broberto%2bbattaglin--canoas-rs-178795442%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178795442');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fpaulo+roberto+battaglin--canoas-rs-178795442');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/paulo+roberto+battaglin--canoas-rs-178795442','Paulo Roberto Battaglin','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/paulo+roberto+battaglin--canoas-rs-178795442"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/rogerio+sebastiany--canoas-rs-178806699/?q=">
+                                Rog&eacute;rio Sebastiany</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/rogerio+sebastiany--canoas-rs-178806699"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 616<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178806699&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2frogerio%2bsebastiany--canoas-rs-178806699%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178806699&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2frogerio%2bsebastiany--canoas-rs-178806699%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178806699');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Frogerio+sebastiany--canoas-rs-178806699');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/rogerio+sebastiany--canoas-rs-178806699','Rog&eacute;rio Sebastiany','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/rogerio+sebastiany--canoas-rs-178806699"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/ronaldo+vesely--canoas-rs-178807470/?q=">
+                                Ronaldo Vesely</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/ronaldo+vesely--canoas-rs-178807470"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 592<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178807470&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fronaldo%2bvesely--canoas-rs-178807470%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178807470&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fronaldo%2bvesely--canoas-rs-178807470%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178807470');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fronaldo+vesely--canoas-rs-178807470');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/ronaldo+vesely--canoas-rs-178807470','Ronaldo Vesely','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/ronaldo+vesely--canoas-rs-178807470"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/rosangela+barreto+de+souza--canoas-rs-178810492/?q=">
+                                Ros&acirc;ngela Barreto de Souza</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/rosangela+barreto+de+souza--canoas-rs-178810492"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 783<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178810492&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2frosangela%2bbarreto%2bde%2bsouza--canoas-rs-178810492%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178810492&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2frosangela%2bbarreto%2bde%2bsouza--canoas-rs-178810492%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178810492');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Frosangela+barreto+de+souza--canoas-rs-178810492');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/rosangela+barreto+de+souza--canoas-rs-178810492','Ros&acirc;ngela Barreto de Souza','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/rosangela+barreto+de+souza--canoas-rs-178810492"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/rui+r+andrade--canoas-rs-178811781/?q=">
+                                Rui R Andrade</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/rui+r+andrade--canoas-rs-178811781"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 300<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178811781&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2frui%2br%2bandrade--canoas-rs-178811781%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178811781&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2frui%2br%2bandrade--canoas-rs-178811781%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178811781');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Frui+r+andrade--canoas-rs-178811781');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/rui+r+andrade--canoas-rs-178811781','Rui R Andrade','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/rui+r+andrade--canoas-rs-178811781"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/ruy+pereira--canoas-rs-178812012/?q=">
+                                Ruy Pereira</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/ruy+pereira--canoas-rs-178812012"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 568<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178812012&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fruy%2bpereira--canoas-rs-178812012%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178812012&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fruy%2bpereira--canoas-rs-178812012%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178812012');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fruy+pereira--canoas-rs-178812012');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/ruy+pereira--canoas-rs-178812012','Ruy Pereira','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/ruy+pereira--canoas-rs-178812012"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/ruy+pereira+junior--canoas-rs-178812013/?q=">
+                                Ruy Pereira J&uacute;nior</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/ruy+pereira+junior--canoas-rs-178812013"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 568<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178812013&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fruy%2bpereira%2bjunior--canoas-rs-178812013%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178812013&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fruy%2bpereira%2bjunior--canoas-rs-178812013%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178812013');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fruy+pereira+junior--canoas-rs-178812013');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/ruy+pereira+junior--canoas-rs-178812013','Ruy Pereira J&uacute;nior','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/ruy+pereira+junior--canoas-rs-178812013"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/silvio+alves+lopes--canoas-rs-178822778/?q=">
+                                S&iacute;lvio Alves Lopes</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/silvio+alves+lopes--canoas-rs-178822778"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 334 fd<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178822778&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fsilvio%2balves%2blopes--canoas-rs-178822778%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178822778&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fsilvio%2balves%2blopes--canoas-rs-178822778%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178822778');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fsilvio+alves+lopes--canoas-rs-178822778');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/silvio+alves+lopes--canoas-rs-178822778','S&iacute;lvio Alves Lopes','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/silvio+alves+lopes--canoas-rs-178822778"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/terezinha+gomes+de+lima--canoas-rs-178826384/?q=">
+                                Terezinha Gomes de Lima</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/terezinha+gomes+de+lima--canoas-rs-178826384"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 499<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178826384&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fterezinha%2bgomes%2bde%2blima--canoas-rs-178826384%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178826384&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fterezinha%2bgomes%2bde%2blima--canoas-rs-178826384%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178826384');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fterezinha+gomes+de+lima--canoas-rs-178826384');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/terezinha+gomes+de+lima--canoas-rs-178826384','Terezinha Gomes de Lima','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/terezinha+gomes+de+lima--canoas-rs-178826384"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/vagner+leandro+cesar+matos--canoas-rs-139046878/?q=">
+                                Vagner Leandro C&eacute;sar Matos</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/vagner+leandro+cesar+matos--canoas-rs-139046878"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 56 fd .<br>
+                            Rio Branco - Canoas - RS - CEP: 92200-420
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=139046878&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvagner%2bleandro%2bcesar%2bmatos--canoas-rs-139046878%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=139046878&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvagner%2bleandro%2bcesar%2bmatos--canoas-rs-139046878%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('139046878');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fvagner+leandro+cesar+matos--canoas-rs-139046878');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/vagner+leandro+cesar+matos--canoas-rs-139046878','Vagner Leandro C&eacute;sar Matos','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/vagner+leandro+cesar+matos--canoas-rs-139046878"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/vagner+leandro+cesar+matos--canoas-rs-139236303/?q=">
+                                Vagner Leandro C&eacute;sar Matos</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/vagner+leandro+cesar+matos--canoas-rs-139236303"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 56 fd .<br>
+                            Rio Branco - Canoas - RS - CEP: 92200-420
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=139236303&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvagner%2bleandro%2bcesar%2bmatos--canoas-rs-139236303%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=139236303&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvagner%2bleandro%2bcesar%2bmatos--canoas-rs-139236303%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('139236303');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fvagner+leandro+cesar+matos--canoas-rs-139236303');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/vagner+leandro+cesar+matos--canoas-rs-139236303','Vagner Leandro C&eacute;sar Matos','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/vagner+leandro+cesar+matos--canoas-rs-139236303"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/valeria+oliveira+spohr--canoas-rs-178831817/?q=">
+                                Val&eacute;ria Oliveira Spohr</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/valeria+oliveira+spohr--canoas-rs-178831817"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 619<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178831817&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvaleria%2boliveira%2bspohr--canoas-rs-178831817%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178831817&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvaleria%2boliveira%2bspohr--canoas-rs-178831817%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178831817');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fvaleria+oliveira+spohr--canoas-rs-178831817');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/valeria+oliveira+spohr--canoas-rs-178831817','Val&eacute;ria Oliveira Spohr','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/valeria+oliveira+spohr--canoas-rs-178831817"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/vanderleia+de+jesus+pereira--canoas-rs-178832405/?q=">
+                                Vanderleia de Jesus Pereira</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/vanderleia+de+jesus+pereira--canoas-rs-178832405"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 703<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178832405&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvanderleia%2bde%2bjesus%2bpereira--canoas-rs-178832405%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178832405&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvanderleia%2bde%2bjesus%2bpereira--canoas-rs-178832405%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178832405');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fvanderleia+de+jesus+pereira--canoas-rs-178832405');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/vanderleia+de+jesus+pereira--canoas-rs-178832405','Vanderleia de Jesus Pereira','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/vanderleia+de+jesus+pereira--canoas-rs-178832405"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/vera+lucia+da+costa+fraga--canoas-rs-178833980/?q=">
+                                Vera L&uacute;cia da Costa Fraga</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/vera+lucia+da+costa+fraga--canoas-rs-178833980"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 836<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178833980&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvera%2blucia%2bda%2bcosta%2bfraga--canoas-rs-178833980%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178833980&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvera%2blucia%2bda%2bcosta%2bfraga--canoas-rs-178833980%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178833980');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fvera+lucia+da+costa+fraga--canoas-rs-178833980');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/vera+lucia+da+costa+fraga--canoas-rs-178833980','Vera L&uacute;cia da Costa Fraga','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/vera+lucia+da+costa+fraga--canoas-rs-178833980"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/vera+regina+de+matos--canoas-rs-178834626/?q=">
+                                Vera Regina de Matos</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/vera+regina+de+matos--canoas-rs-178834626"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 945<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178834626&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvera%2bregina%2bde%2bmatos--canoas-rs-178834626%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178834626&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvera%2bregina%2bde%2bmatos--canoas-rs-178834626%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178834626');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fvera+regina+de+matos--canoas-rs-178834626');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/vera+regina+de+matos--canoas-rs-178834626','Vera Regina de Matos','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/vera+regina+de+matos--canoas-rs-178834626"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/vitor+fernandes+rodrigues--canoas-rs-178837894/?q=">
+                                V&iacute;tor Fernandes Rodrigues</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/vitor+fernandes+rodrigues--canoas-rs-178837894"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 363<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178837894&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvitor%2bfernandes%2brodrigues--canoas-rs-178837894%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178837894&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvitor%2bfernandes%2brodrigues--canoas-rs-178837894%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178837894');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fvitor+fernandes+rodrigues--canoas-rs-178837894');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/vitor+fernandes+rodrigues--canoas-rs-178837894','V&iacute;tor Fernandes Rodrigues','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/vitor+fernandes+rodrigues--canoas-rs-178837894"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/volni+dutra+da+silveira--canoas-rs-178837634/?q=">
+                                Volni Dutra da Silveira</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/volni+dutra+da+silveira--canoas-rs-178837634"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 346 ap 2<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178837634&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvolni%2bdutra%2bda%2bsilveira--canoas-rs-178837634%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178837634&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fvolni%2bdutra%2bda%2bsilveira--canoas-rs-178837634%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178837634');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fvolni+dutra+da+silveira--canoas-rs-178837634');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/volni+dutra+da+silveira--canoas-rs-178837634','Volni Dutra da Silveira','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/volni+dutra+da+silveira--canoas-rs-178837634"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+
+    var Arqpath = 'http://www.telelistas.net/templates/';   //mudar para pathArquivos para apontar para producao
+    var localorg = 'controle';
+
+    function PostaFacebook(linkfacebook) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Facebook&url=' + linkfacebook + '&local=' + localorg);
+    }
+
+    function PostaTwitter(linktwitter, nomeempresa, nomeuf) {
+        window.open(Arqpath + 'Redireciona.aspx?origem=Twitter&url=' + linktwitter + '&local=' + localorg + '&nome=' + nomeempresa + '&cidade=' + nomeuf);
+    }
+     
+</script><table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+<tr>
+<td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/waldemar+rodrigues+trelhes--canoas-rs-178838309/?q=">
+                                Waldemar Rodrigues Trelhes</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/waldemar+rodrigues+trelhes--canoas-rs-178838309"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Das Cam&eacute;lias, 607<br>
+                            Canoas - RS
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=178838309&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fwaldemar%2brodrigues%2btrelhes--canoas-rs-178838309%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178838309&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fwaldemar%2brodrigues%2btrelhes--canoas-rs-178838309%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178838309');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fwaldemar+rodrigues+trelhes--canoas-rs-178838309');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/waldemar+rodrigues+trelhes--canoas-rs-178838309','Waldemar Rodrigues Trelhes','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/waldemar+rodrigues+trelhes--canoas-rs-178838309"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+</div>
+        </td>
+    </tr>
+<tr><td>
+    <div id="ctl00_Content_gadsensefooterPnl">
+	
+<div id="adcontainer1" style="padding-top: 15px;"></div>
+<script src="http://www.google.com/adsense/search/ads.js" type="text/javascript"></script><script type="text/javascript" charset="utf-8">
+    var pageOptions = {
+        'pubId': 'pub-6898378105006882',
+        'query': '',
+        'channel': '1820633586',
+        'hl': 'pt'
+    };
+    var adblock1 = {
+  'container' : 'adcontainer1',
+  'number' : '4',
+  'width' : '468px',
+  'fontFamily' : 'verdana',
+  'fontSizeDescription' : '10px',
+  'fontSizeDomainLink' : '10px',
+  'colorTitleLink' : '#00518f',
+  'colorText' : '#00518f',
+  'colorDomainLink' : '#00518f',
+  'colorBackground' : '#ededed',
+  'colorBorder' : '#ededed'
+    };
+    new google.ads.search.Ads(pageOptions, adblock1);
+</script>
+</div>
+</td></tr>
+<tr>
+<td>
+            <div id="ctl00_Content_Footer">
+	
+
+<table width="468" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="10">
+            &nbsp;
+        </td>
+    </tr>
+<tr>
+<td align="center" valign="bottom">
+            <table width="468" height="20" border="0" cellpadding="0" cellspacing="0"><tr>
+<td width="26" height="20" align="center" valign="middle" class="text_medio">
+                        0-9
+                    </td>
+                    <td width="1" bgcolor="DADADA">
+                      </td>
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'A');return false;">
+                            A</a>
+                            
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'B');return false;">B</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'C');return false;">C</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'D');return false;">D</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'E');return false;">E</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'F');return false;">F</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'G');return false;">G</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'H');return false;">H</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'I');return false;">I</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'J');return false;">J</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'K');return false;">K</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'L');return false;">L</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'M');return false;">M</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'N');return false;">N</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'O');return false;">O</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'P');return false;">P</a>
+                        
+                    </td>
+                    <td width="1" bgcolor="DADADA">
+                      </td>
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        Q
+                    </td>
+                    <td width="1" bgcolor="DADADA">
+                      </td>
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'R');return false;">
+                            R</a>
+                            
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'S');return false;">S</a>
+                        
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'T');return false;">T</a>
+                        
+                    </td>
+                    <td width="1" bgcolor="DADADA">
+                      </td>
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        U
+                    </td>
+                    <td width="1" bgcolor="DADADA">
+                      </td>
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'V');return false;">
+                            V</a>
+                            
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';" class="text_medio">
+                        
+                        <a class="azddd" href="#" onclick="Change('letra', 'W');return false;">W</a>
+                        
+                    </td>
+                    <td width="1" bgcolor="DADADA">
+                      </td>
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        X
+                    </td>
+                    <td width="1" bgcolor="DADADA">
+                      </td>
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        Y
+                    </td>
+                    <td width="1" bgcolor="DADADA">
+                      </td>
+                    <td width="16" height="20" align="center" valign="middle" class="text_medio">
+                        Z
+                    </td>
+                    
+                </tr></table>
+</td>
+    </tr>
+<tr>
+<td height="10">
+        </td>
+    </tr>
+<tr>
+<td height="26">
+            <table width="468" height="26" border="0" cellpadding="0" cellspacing="0"><tr>
+<td width="80" align="left" valign="middle">
+                        <a href="#" onclick="Change('pagina','4');return false;"><img border="0" height="26" src="http://img.telelistas.net/img/por_rodape_ante.gif" width="80"></a>
+                    </td>
+                    <td align="center" background="http://img.telelistas.net/img/por_fundo_rodape.gif" class="text_medio" valign="middle" width="308">
+                        
+                                    <a href="#" onclick="Change('pagina','1');return false;" class="resultado_roda">
+                                        1
+                                    </a>
+                                     | 
+                                    <a href="#" onclick="Change('pagina','2');return false;" class="resultado_roda">
+                                        2
+                                    </a>
+                                     | 
+                                    <a href="#" onclick="Change('pagina','3');return false;" class="resultado_roda">
+                                        3
+                                    </a>
+                                     | 
+                                    <a href="#" onclick="Change('pagina','4');return false;" class="resultado_roda">
+                                        4
+                                    </a>
+                                     | 5
+                    </td>
+                    <td width="80" align="right" valign="middle">
+                        
+                        <img border="0" height="26" src="http://img.telelistas.net/img/por_rodape_prox_off.gif" width="80">
+</td>
+                </tr></table>
+</td>
+    </tr>
+<tr>
+<td height="10">
+        </td>
+    </tr>
+<tr>
+<td align="center" valign="top">
+            <table width="200" border="0" cellspacing="0" cellpadding="0"><tr>
+<td width="100" align="left" valign="bottom">
+                        <a href="#" onclick="window.open('/templates/imprimir_resultado.aspx?uf_busca=rs&amp;orgm=8&amp;atividade=&amp;cod_atividade=-1&amp;nome=&amp;endereco=camelias&amp;numero=0&amp;telefone=&amp;ddd=0&amp;localidade=&amp;cod_localidade=51062&amp;bairro=&amp;cod_bairro=0&amp;entrega=0&amp;cartoes=0&amp;estacionamento=0&amp;manobrista=0&amp;reserva=0&amp;tiquetes=0&amp;residencial=0&amp;comercial=0&amp;btnemail=0&amp;btnsite=0&amp;pchave=&amp;letra=&amp;pagina=5&amp;pcount=25&amp;randsort=1094595695&amp;imprimir=1&amp;guia=0','imprimir','height=500,width=653,resizable=no,top=20,left=10,scrollbars=yes,status=yes');return false">
+                            <img border="0" height="14" src="http://img.telelistas.net/img/por_print_rodape.gif" width="88"></a>
+                    </td>
+                    <td width="100" align="right" valign="bottom">
+                        <a href="#" onclick="window.open('/templates/envia.aspx?tipo=resultado', 'EnviarResultado', 'scrollbars=no,resizable=yes,width=315px, height=480px');return false;">
+                            <img border="0" height="14" src="http://img.telelistas.net/img/por_send_rodape.gif" width="74"></a>
+                    </td>
+                </tr></table>
+</td>
+    </tr>
+</table>
+<form method="post" name="form_link" action="">
+<input type="hidden" name="link_envia" value="http://www.telelistas.net/templates/resultado_busca.aspx?uf_busca=rs&amp;orgm=8&amp;atividade=&amp;cod_atividade=-1&amp;nome=&amp;endereco=camelias&amp;numero=0&amp;telefone=&amp;ddd=0&amp;localidade=&amp;cod_localidade=51062&amp;bairro=&amp;cod_bairro=0&amp;entrega=0&amp;cartoes=0&amp;estacionamento=0&amp;manobrista=0&amp;reserva=0&amp;tiquetes=0&amp;residencial=0&amp;comercial=0&amp;btnemail=0&amp;btnsite=0&amp;pchave=&amp;letra=&amp;pagina=5&amp;pcount=25&amp;randsort=1094595695">
+</form>
+
+</div>
+        </td>
+    </tr>
+</table>
+</td>
+    <td width="10">
+    </td>
+    <td width="310" align="center" valign="top">
+        <table width="310" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="right" valign="top">
+                    <iframe name="banner" src="http://www.ophertas.net/banners/porto+alegre-rs/" frameborder="0" marginwidth="0" marginheight="0" scrolling="NO" align="center" width="320" height="250"></iframe>
+                </td>
+            </tr>
+<tr>
+<td height="10" align="right">
+                    <table width="310" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="20">
+                            </td>
+                        </tr>
+<tr>
+<td width="320" height="396" valign="top">
+                                <iframe name="palco" src="http://templates.buscape.com/dynatemplate/telelistas_320x396.html?thumbSize=80&amp;affiliateId=23146442&amp;partnerId=7405&amp;k0=&amp;k1=&amp;k2=&amp;k3=" frameborder="0" width="320" height="396" scrolling="no"></iframe>
+                            </td>
+                        </tr>
+<tr>
+<td height="20">
+                            </td>
+                        </tr>
+<tr>
+<td width="322" height="320" valign="top">
+                                <iframe name="palco" src="http://static.mundi.com.br/vitrines/telelistas/?xml=Telelistas.net_626" frameborder="0" width="322" height="320" scrolling="no"></iframe>
+                            </td>
+                        </tr>
+<tr>
+<td height="20">
+                            </td>
+                        </tr>
+</table>
+</td>
+            </tr>
+<tr>
+<td align="right">
+                    <!-- <iframe src="/templates/framecomprafacil.aspx" frameborder="0" width="310" height="250" scrolling="no"></iframe> -->
+                </td>
+            </tr>
+</table>
+</td>
+    <td width="10">
+    </td>
+    </tr>
+<tr>
+<td height="20" colspan="7">
+            <!-- Google Code for lead Conversion Page -->
+
+            <script language="JavaScript" type="text/javascript">
+<!--
+                var google_conversion_id = 1071865962;
+                var google_conversion_language = "pt_BR";
+                var google_conversion_format = "1";
+                var google_conversion_color = "FFFFCC";
+                if (1) {
+                    var google_conversion_value = 1;
+                }
+                var google_conversion_label = "lead";
+//-->
+            </script><script language="JavaScript" src="http://www.googleadservices.com/pagead/conversion.js"></script><noscript>
+                <img height="1" width="1" border="0" src="http://www.googleadservices.com/pagead/conversion/1071865962/imp.gif?value=1&amp;label=lead&amp;script=0">
+</noscript>
+            <!-- Google Code for pageview Conversion Page -->
+        </td>
+    </tr>
+<tr>
+<td height="1" colspan="7" align="center"></td>
+			</tr>
+<tr><td height="20" colspan="7" align="center">
+                    <table width="980" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td>
+					
+
+                      <div id="rodape-new">
+                              <div class="box-rodape">
+                                      <span class="tit-list">TeleListas.net na Web</span>
+                                      <ul class="ul-list">
+<li><a href="http://www.sempreamao.blogspot.com/" target="_blank" class="rodape"><img src="http://img.telelistas.net/img/ico-blog.gif" border="0" align="absmiddle" alt="Blog">Blog</a></li>
+                                            
+                                            <li><a href="http://pt-br.facebook.com/pages/TeleListasnet/473502715552?ref=ts" target="_blank" class="rodape"><img src="http://img.telelistas.net/img/facebook_16.gif" border="0" align="absmiddle" alt="Facebook">Facebook</a></li>
+                                            
+                                            <li><a href="http://www.orkut.com.br/Main#Profile.aspx?uid=5169695372583198602&amp;rl=t" target="_blank" class="rodape"><img src="http://img.telelistas.net/img/ico-orkut.gif" border="0" align="absmiddle" alt="Orkut">Orkut</a></li>
+                                            <li><a href="http://twitter.com/TeleListas" target="_blank" class="rodape"><img src="http://img.telelistas.net/img/ico-twitter.gif" border="0" align="absmiddle" alt="Twitter">Twitter</a></li>
+                                            <li><a href="http://www.conexaomercado.com.br" target="_blank" class="rodape"><img src="http://img.telelistas.net/img/ico-conexao-novo.gif" border="0" align="absmiddle" alt="Conex&atilde;o Mercado">Conex&atilde;o Mercado</a></li>
+                                      </ul>
+</div>
+                              
+                              <div class="box-rodape">
+                                      <a class="rodape semSublinhado" href="/templates/busca_assunto_uf.aspx" target="_self">
+                                        <span class="tit-list">Atividades por Localidade</span>
+                                      </a> 
+                                      <ul class="listaCapitais">
+<li><a href="/sp/sao+paulo">S&atilde;o Paulo</a></li>
+					  <li class="noBullet"><a href="/rj/rio+de+janeiro">Rio de Janeiro</a></li>
+					  <li><a href="/mg/belo+horizonte">Belo Horizonte</a></li>
+					  <li class="noBullet"><a href="/df/brasilia">Bras&iacute;lia</a></li>
+					  <li><a href="/rs/porto+alegre">Porto Alegre</a></li>
+					  <li class="noBullet"><a href="/ba/salvador">Salvador</a></li>
+					  <li><a href="/pr/curitiba">Curitiba</a></li>
+					  <li><a href="/ce/fortaleza">Fortaleza</a></li>
+					  <li class="noBullet"><a href="/pe/recife">Recife</a></li>
+					  <li><a href="/go/goiania">Goi&acirc;nia</a></li>
+					  <li><a href="/pa/belem">Bel&eacute;m</a></li>
+					  <li class="noBullet"><a href="/am/manaus">Manaus</a></li>
+					  <li><a href="/ms/campo+grande">Campo Grande</a></li>
+					  <li class="noBullet"><a href="/al/maceio">Macei&oacute;</a></li>
+					  <li><a href="/ma/sao+luis">S&atilde;o Lu&iacute;s</a></li>
+					  <li><a href="/rn/natal">Natal</a></li>
+					  <li class="noBullet"><a href="/pb/joao+pessoa">Jo&atilde;o Pessoa</a></li>
+					  <li><a href="/pi/teresina">Teresina</a></li>
+					  <li><a href="/mt/cuiaba">Cuiab&aacute;</a></li>
+					  <li class="noBullet"><a href="/sc/florianopolis">Florian&oacute;polis</a></li>
+					  <li><a href="/se/aracaju">Aracaju</a></li>
+					  <li><a href="/es/vitoria">Vit&oacute;ria</a></li>
+					  <li class="noBullet"><a href="/ac/rio+branco">Rio Branco</a></li>
+					  <li><a href="/ap/macapa">Macap&aacute;</a></li>
+					  <li><a href="/ro/porto+velho">Porto Velho</a></li>
+					  <li class="noBullet"><a href="/rr/boa+vista">Boa Vista</a></li>
+					  <li class="noBullet"><a href="/to/palmas">Palmas</a></li>
+					  <li class="verTodas"><a href="/templates/busca_Localidade.aspx">Outras as cidades</a></li>
+                                      </ul>
+</div>
+
+                              <div class="box-rodape">
+                                      <span class="tit-list">Mais Buscas</span>
+                                      <ul class="ul-list">
+<li>
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/busca_palavrachave.aspx" target="_self">Por Palavra-chave</a>
+</li>
+                                          <!--<li><img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a  class="rodape" href="http://www.telelistas.net/templates/.aspx" target="_self">Por Atividade</a></li>-->
+                                          
+                                          <li>
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/mapas_enderecos.aspx" target="_self">Mapas &amp; Endere&ccedil;os</a>
+</li>
+                                          <li>
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/mapa_mundi.aspx" target="_self">Listas do Mundo</a>
+</li>
+                                          <li>
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/ddd_ddi.aspx" target="_self">DDD &amp; DDI</a>
+</li>
+                                          <li>
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/cep.aspx" target="_self">CEP</a>
+</li>		
+                              
+                                      </ul>
+</div>
+                              
+                              <div class="box-rodape">
+                                      <span class="tit-list">Grupo TeleListas</span>
+                                      <ul class="ul-list">
+<li>
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/aempresa.aspx?sec=0" target="_self">Quem Somos</a>
+</li>
+                                          <li id="nav_rodape">
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/sala_imprensa.aspx?sec=2" target="_self">Sala de Imprensa</a>
+</li>
+                                          <li id="nav_rodape">
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/parceiros.aspx" target="_self">Nossos Parceiros</a>
+</li>
+                                          <li id="nav_rodape">
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="http://www.ecommerce.telelistas.net/" _target="_self">Anuncie</a>
+</li>
+										  <li id="nav_rodape">
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/anuncie.aspx" target="_self">Produtos TeleListas</a>
+</li>
+                                          <li id="nav_rodape">
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/talentos.aspx" target="_self">Trabalhe Conosco</a>
+</li>
+                                          <li id="nav_rodape">
+<img src="http://img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"><a class="rodape" href="/templates/form_fale.aspx" target="_self">Fale Conosco</a>
+</li>
+                                      </ul>
+</div>
+                              <div style="clear:both;"></div>
+                      </div>
+                      <div class="text_copy">&copy; TeleListas 2012.</div>
+                      <div class="privacidade"><a class="privacidade" href="/templates/politica_privacidade.aspx" target="_self">Pol&iacute;tica de Privacidade</a></div>
+					</td></tr></table>
+</td></tr>
+</table>
+<div style="visibility: hidden;">
+</div>
+<script language="JavaScript1.3" src="http://b.scorecardresearch.com/c2/8433347/cs.js"></script>
+</body>
+</html>

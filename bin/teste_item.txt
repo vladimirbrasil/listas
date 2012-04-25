@@ -1,0 +1,71 @@
+<table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/rosely+de+souza+aurelio--porto+alegre-rs-187425109/?q=">
+                                Rosely de Souza Aur&eacute;lio</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/rosely+de+souza+aurelio--porto+alegre-rs-187425109"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 99<br>
+                            Bom Jesus - Porto Alegre - RS - CEP: 91420-370
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                                                        
+                            <a href="http://www.telelistas.net/templates/logredirect.aspx?bt=3&amp;id=187425109&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2frosely%2bde%2bsouza%2baurelio--porto%2balegre-rs-187425109%3finitmap">mapa</a>
+                            |&nbsp;
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=187425109&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2frosely%2bde%2bsouza%2baurelio--porto%2balegre-rs-187425109%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('187425109');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Frosely+de+souza+aurelio--porto+alegre-rs-187425109');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/rosely+de+souza+aurelio--porto+alegre-rs-187425109','Rosely de Souza Aur&eacute;lio','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/rosely+de+souza+aurelio--porto+alegre-rs-187425109"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>

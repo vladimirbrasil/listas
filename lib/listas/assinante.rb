@@ -31,7 +31,7 @@ module Listas
 
     # Coloca em um string _nome_, _telefone_, _endereço_ e _dist_ (se houver) do assinante.
     def to_s
-      str = "#{@telefone} #{@nome}\n#{@endereco.gsub(/\n|\s\s$/,' ')}".gsub(/\t|\s\s$/,' ').gsub(/^\s+|/,'')
+      str = "#{@telefone}\n#{@nome}\n#{@endereco.gsub(/\n|\s\s$/,' ')}".gsub(/\t|\s\s$/,' ').gsub(/^\s+|/,'')
       str = "#{@dist}\n" + str if @dist
       "#{str}\n---------\n"
     end

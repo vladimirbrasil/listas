@@ -95,17 +95,17 @@ module Listas
     # Cada página é aberta usando Leitor#abrir_pagina
     def buscar_assinantes(url) 
       threads = []
-      mutex = Mutex.new
-      abrir_pagina(url, 1, mutex)
+      @mutex = Mutex.new
+      abrir_pagina(url, 1)
       if @total_assinantes_esperados then total_paginas = 1 + @total_assinantes_esperados/MAX_ASS_POR_PAGINA
       else fail "Não foi encontrado o numero total de assinantes. Revisar seletor css: \n'#{CSS_TOTAL_ASSINANTES}'\n" end
       (2..total_paginas).each do |pagina|
         if @sem_threads
-          abrir_pagina(url, pagina, mutex)
+          abrir_pagina(url, pagina)
         else
           threads << Thread.new(pagina) do |pag_thread| 
             Thread.current["minha_pagina"] = pag_thread
-            abrir_pagina(url, pag_thread, mutex)
+            abrir_pagina(url, pag_thread)
           end
         end
       end
@@ -129,23 +129,32 @@ module Listas
     #--
     # Criar váriavel @url para conter a url montada no método Leitor#buscar_por_, sem precisar passar a url montada em cadeia por todas as funções?
     #++
-    def abrir_pagina(url, pagina, mutex)
+    def abrir_pagina(url, pagina)
       puts "Abrindo pagina #{pagina}...\n" unless @sem_mensagens
       page = @agent.get("#{url}&pagina=#{pagina}")
       node = Nokogiri::HTML(page.body)
       @total_assinantes_esperados = extrair_total_assinantes(node) unless @total_assinantes_esperados ||= nil
+      extrair_assinantes(node, @mutex)
+    end
+
+    def extrair_assinantes(node, mutex_local)
       node_assinantes = extrair_tabela_assinantes(node)
+i = 1      
       node_assinantes.each do |item| 
+i = i + 1
+File.open("teste_item.txt", "w") { |f| f.puts item } if i == 2
         if novo_assinante = extrair_assinante(item)
           puts novo_assinante.to_s unless @sem_mensagens
-          mutex.synchronize do
+          mutex_local.synchronize do
             @assinantes_duplicados ||= []
             if @assinantes.any? {|ass| ass == novo_assinante} then @assinantes_duplicados << novo_assinante
             else @assinantes << novo_assinante end
           end
         end
       end
+      @assinantes.length + @assinantes_duplicados.length
     end
+
     
     # Extrai o nó contendo os assinantes em cada página web
     def extrair_tabela_assinantes(node)
@@ -174,8 +183,8 @@ module Listas
     # Retorna o objeto da classe _Assinante_
     def extrair_assinante(item)
       if not item.css(CSS_STR_LEFT).css(CSS_STR_RESULTADO).text.gsub(/^\s+|\s+$/,'').empty?
-        nome = item.css(CSS_STR_LEFT).css(CSS_STR_RESULTADO).text.gsub(/^\s+|\s+$/,'')
-        telefone = item.css(CSS_STR_RIGHT).css(CSS_STR_RESULTADO).text.gsub(/^\s+|\s+$/,'')
+        nome = item.css(CSS_STR_LEFT).css(CSS_STR_RESULTADO).text.gsub(/^\s+|\s+$/,'') 
+        telefone = item.css(CSS_STR_RIGHT).css(CSS_STR_RESULTADO).css('a')[0]['href'] unless item.css(CSS_STR_RIGHT).css(CSS_STR_RESULTADO).css('a').empty?
         endereco = item.css(CSS_STR_ENDERECO).text.gsub(/^\s+|\s+$/,'')
         Listas::Assinante.new(nome, telefone, endereco)
       else

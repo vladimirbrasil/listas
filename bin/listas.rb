@@ -4,14 +4,21 @@
 # => retorna os assinantes da rua em vizinhos.txt
 # => retorna os assinantes mais próximos da rua em vizinhos_proximos.txt
 # Exemplo de uso em outro estado (fornecer uf): listas.rb "humberto de campos" 56 santos sp
+#--
+# http://net.tutsplus.com/tutorials/ruby/an-introduction-to-haml-and-sinatra/
+# http://ididitmyway.heroku.com/past/2011/2/22/really_simple_authentication_in_sinatra/
 require "rubygems"
 require "bundler/setup"
 require 'thin'
 require 'sinatra'
+#require 'slim'
+#require 'sass'
 require 'json'
 require_relative '../lib/listas/runner'
 
-get '/endereco' do
+
+  
+get '/enderecos' do
 
   max_vizinhos = params[:max_vizinhos].nil? ? 10 : Integer(params[:max_vizinhos])
   rua = params[:rua]
@@ -33,10 +40,21 @@ get '/endereco' do
   
     str = ""
     vizinhos.each do |vizinho|
-      str = str + "#{vizinho.dist}<br>#{vizinho.nome}<br>#{vizinho.telefone}<br>#{vizinho.endereco}<br><br>"
+      str = str + "#{vizinho.dist}<br>#{vizinho.nome}<br><a href='#{vizinho.telefone}'>ver telefone</a><br>#{vizinho.endereco}<br><br>"
     end
     
     "#{str}"
   end
   
 end
+__END__
+@@layout
+!!! 5
+%html
+  %head
+    %meta(charset="utf-8")
+    %title Teste Titulo
+  %body
+    = yield
+    
+    

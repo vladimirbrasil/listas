@@ -1,0 +1,69 @@
+<table width="459" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+<tr>
+<td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a href="http://www.telelistas.net/pessoas/luiz+gustavo+vargas+da+silva--canoas-rs-178750785/?q=">
+                                Luiz Gustavo Vargas da Silva</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="http://www.telelistas.net/pessoas/luiz+gustavo+vargas+da+silva--canoas-rs-178750785"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+<tr>
+<td width="30" align="left" valign="middle" class="text_endereco_ib">
+                            <!-- mapa antes -->
+                            &nbsp;
+                        </td>
+                        <td width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua das Cam&eacute;lias, 128<br>
+                            Canoas - RS - CEP: 92410-530
+                        </td>
+                    </tr>
+<tr>
+<td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+<tr>
+<td height="10" rowspan="3" align="left" valign="middle">
+                        </td>
+                        <td height="5" align="left" valign="middle" class="ib_ser">
+                            
+                            <a href="http://www.telelistas.net/templates/vcard_rest.aspx?bt=1&amp;id=178750785&amp;link=http%3a%2f%2fwww.telelistas.net%2fpessoas%2fluiz%2bgustavo%2bvargas%2bda%2bsilva--canoas-rs-178750785%2f%3fq%3d">+info</a>
+                            
+                            |&nbsp;
+                            <a href="#" onclick="popTorpedo('178750785');return false;">torpedo</a>
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaFacebook('http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Fluiz+gustavo+vargas+da+silva--canoas-rs-178750785');">
+                                            <img src="http://img.telelistas.net/img/ico_facebook.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Facebook" title="Compartilhe essa informa&ccedil;&atilde;o no Facebook" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a href="#" onclick="PostaTwitter('http://www.telelistas.net/pessoas/luiz+gustavo+vargas+da+silva--canoas-rs-178750785','Luiz Gustavo Vargas da Silva','RS');">
+                                            <img src="http://img.telelistas.net/img/ico_twitter.png" align="absmiddle" alt="Compartilhe essa informa&ccedil;&atilde;o no Twitter" title="Compartilhe essa informa&ccedil;&atilde;o no Twitter" style="cursor: hand; border: 0px;"></a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <plusone size="small" count="false" href="http://www.telelistas.net/pessoas/luiz+gustavo+vargas+da+silva--canoas-rs-178750785"></plusone>
+</div>
+                                    </td>
+                                </tr></table>
+</td>
+                    </tr>
+<tr>
+<td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+</table>
