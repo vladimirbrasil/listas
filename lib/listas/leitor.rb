@@ -139,10 +139,7 @@ module Listas
 
     def extrair_assinantes(node, mutex_local)
       node_assinantes = extrair_tabela_assinantes(node)
-i = 1      
       node_assinantes.each do |item| 
-i = i + 1
-File.open("teste_item.txt", "w") { |f| f.puts item } if i == 2
         if novo_assinante = extrair_assinante(item)
           puts novo_assinante.to_s unless @sem_mensagens
           mutex_local.synchronize do

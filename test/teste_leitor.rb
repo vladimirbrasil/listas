@@ -45,7 +45,7 @@ class TesteLeitor < Test::Unit::TestCase
     setup do
       @mutex = Mutex.new
       @leitor = Listas::Leitor.new("")
-      #@leitor.sem_mensagens = true
+      @leitor.sem_mensagens = true
     end
     (1..5).each do |n|
       File.open("teste_node_#{n}.txt", 'r') do |f|
@@ -62,8 +62,8 @@ class TesteLeitor < Test::Unit::TestCase
 #    File.open("C:/Users/Vla/Documents/Ruby/listas/test/teste_item.txt", 'r') do |f|
     File.open("teste_item.txt", 'r') do |f|
       node = Nokogiri::HTML(f.read)
-      should "extrair assinante Orlando para o item-teste" do
-        assert_match(/orlando/i, @leitor.extrair_assinante(node).nome)
+      should "extrair assinante Gustavo para o item-teste" do
+        assert_match(/gustavo/i, @leitor.extrair_assinante(node).nome)
       end
     end
   end
