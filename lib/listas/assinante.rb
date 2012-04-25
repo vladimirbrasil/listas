@@ -12,7 +12,7 @@ module Listas
     def initialize(nome,telefone,endereco)
       @nome = nome
       @telefone = telefone
-      @endereco = endereco.gsub(/\u00a0|\xA0|\xC2/,"") #.delete 194.chr+160.chr #.gsub(/\xA0|\xC2/,"") # elimina non-breaking spaces
+      @endereco = endereco.gsub(/\u00a0/,"") #.delete 194.chr+160.chr #.gsub(/\xA0|\xC2/,"") # elimina non-breaking spaces
       # Distância entre o endereço do assinante e um número de endereço fornecido pelo método Assinante#inserir_distancia!
       @dist = nil
     end
