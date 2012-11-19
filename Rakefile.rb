@@ -4,6 +4,17 @@
 # gem "sinatra"
 
 require 'package_task'
+
+
+# rspec | https://gist.github.com/2176510
+require 'rspec/core'
+require 'rspec/core/rake_task'
+task :default => :spec
+desc "Run all specs in spec directory (excluding plugin specs)"
+RSpec::Core::RakeTask.new(:spec)
+# fim rspec | https://gist.github.com/2176510
+
+
 spec = PackageTask.new do |s|
 	s.name			  = "vizinhos"
 	s.summary		  = "Encontre vizinhos de um endereço fornecido"
@@ -24,3 +35,6 @@ spec.add_dependency('nokogiri')
 spec.add_dependency('thin')
 spec.add_dependency('sinatra')
 Rake::GemPackageTask.new(spec).define	
+
+
+
