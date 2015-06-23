@@ -258,7 +258,7 @@ module Listas
       hash_cidades = {}
       xml_doc.xpath("//option").each { |item|	hash_cidades[item.text] = item["value"] }
       if hash_cidades.has_key?(cidade) then Integer(hash_cidades[cidade])
-      else fail "cidade '#{cidade}' nao foi encontrada"
+      else raise ArgumentError, "cidade '#{cidade}' nao foi encontrada"
       end
     end		
   end

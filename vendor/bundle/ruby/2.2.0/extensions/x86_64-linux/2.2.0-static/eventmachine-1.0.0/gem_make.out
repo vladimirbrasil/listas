@@ -1,0 +1,40 @@
+/home/vla/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20150623-14260-1pbkm1w.rb extconf.rb
+checking for rb_trap_immediate in ruby.h,rubysig.h... no
+checking for rb_thread_blocking_region()... no
+checking for inotify_init() in sys/inotify.h... yes
+checking for writev() in sys/uio.h... yes
+checking for rb_thread_check_ints()... yes
+checking for rb_time_new()... yes
+checking for sys/event.h... no
+checking for epoll_create() in sys/epoll.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling binder.cpp
+compiling ssl.cpp
+compiling ed.cpp
+compiling page.cpp
+compiling pipe.cpp
+compiling cmain.cpp
+compiling kb.cpp
+compiling em.cpp
+em.cpp: In member function ‘bool EventMachine_t::_RunEpollOnce()’:
+em.cpp:532:65: error: ‘rb_thread_select’ was not declared in this scope
+  if ((ret = rb_thread_select(epfd + 1, &fdreads, NULL, NULL, &tv)) < 1) {
+                                                                 ^
+em.cpp:573:37: error: ‘rb_thread_select’ was not declared in this scope
+   EmSelect (0, NULL, NULL, NULL, &tv);
+                                     ^
+em.cpp: In member function ‘int SelectData_t::_Select()’:
+em.cpp:825:67: error: ‘rb_thread_select’ was not declared in this scope
+  return EmSelect (maxsocket+1, &fdreads, &fdwrites, &fderrors, &tv);
+                                                                   ^
+em.cpp: In member function ‘bool EventMachine_t::_RunSelectOnce()’:
+em.cpp:964:40: error: ‘rb_thread_select’ was not declared in this scope
+      EmSelect (0, NULL, NULL, NULL, &tv);
+                                        ^
+make: *** [em.o] Error 1
+
+make failed, exit code 2

@@ -1,0 +1,13 @@
+/home/vla/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20150623-13450-nhyo7y.rb extconf.rb
+checking for main() in -lstdc++... yes
+checking for ruby/encoding.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20150623-13450-pte0n5

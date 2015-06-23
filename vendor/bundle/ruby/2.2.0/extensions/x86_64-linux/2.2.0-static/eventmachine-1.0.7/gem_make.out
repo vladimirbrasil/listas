@@ -1,0 +1,12 @@
+/home/vla/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20150623-14623-dv6c23.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20150623-14623-1tv6u5l

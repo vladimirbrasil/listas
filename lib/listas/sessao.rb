@@ -31,10 +31,10 @@ module Listas
         loginform.email  = 'vlads@globo.com'
         loginform.senha  = 'cocacola'
         page2 = loginform.submit(loginform.buttons[0])	
-        fail "Login mal-sucedido (usuario: '#{loginform.email}')" if page2.body.match(loginform.email)
+        raise "Login mal-sucedido (usuario: '#{loginform.email}')" if page2.body.match(loginform.email)
         page2.body.to_s
       else
-        fail "A pagina de login '#{LOGIN_FORM_NAME}' nao foi encontrada\nO site pode estar fora do ar"
+        raise "A pagina de login '#{LOGIN_FORM_NAME}' nao foi encontrada\nO site pode estar fora do ar"
         false
       end
     end

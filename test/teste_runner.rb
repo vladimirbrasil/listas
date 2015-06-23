@@ -2,10 +2,38 @@
 require_relative '../lib/listas/sessao'
 require_relative '../lib/listas/runner'
 require_relative '../lib/listas/leitor'
-require 'benchmark'
-require 'shoulda'
-require 'test/unit'
+# require 'benchmark'
+# require 'shoulda'
+# require 'test/unit'
+require "minitest/autorun"
 
+describe "teste de cidades" do
+  before do
+    @max_vizinhos = 10
+    @runner = Listas::Runner.new(sem_mensagens = true)
+    @runner.sem_threads = false
+  end
+
+  @enderecos = {
+#    83 =>   ['camelias',  '56', 'porto alegre'],
+#    0 =>    ['camelias',  '56', 'novo hamburgo'],
+#    1509 => ['anita garibaldi',  '1160', 'porto alegre'],
+#    83 => ['alberto bacarat',  '54', 'santos', 'sp'],
+    117 =>   ['camelias',  '56', 'canoas']
+  }
+
+  @enderecos.each do |total, endereco|
+
+    it "encontrar #{total} assinantes para o endereco #{endereco.join(", ")}" do
+      vizinhos = @runner.buscar_vizinhos(@max_vizinhos, *endereco)
+      puts vizinhos
+      assert_equal(@max_vizinhos, vizinhos.length)
+    end
+  end
+
+end
+
+=begin
 class TesteRunner < Test::Unit::TestCase
   MAX_VIZINHOS = 10
   ENDERECOS = {
@@ -31,6 +59,7 @@ class TesteRunner < Test::Unit::TestCase
     end
   end
 end
+=end
 
 # ruby -w teste_runner.rb -n /RunTime/
 
