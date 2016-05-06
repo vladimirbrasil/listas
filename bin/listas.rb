@@ -7,6 +7,12 @@
 #--
 =begin
   Afazeres
+    http://learnrubythehardway.org/book/ex51.html
+      Colocar um formulário. 
+        Ou mensagem (dica de como usar?) na página inicial.
+      Responder em html
+    
+
     usar slim e sass ou haml e/ou css | nao funciona!
       http://ididitmyway.heroku.com/past/2011/7/18/current_pages/
     autenticar
@@ -22,7 +28,9 @@ require 'sinatra'
 require 'json'
 require_relative '../lib/listas/runner'
 
-
+get '/' do
+  "endereco? rua, numero, cidade (porto alegre), uf (rs), max_vizinhos ()"
+end
   
 get '/endereco' do
 
