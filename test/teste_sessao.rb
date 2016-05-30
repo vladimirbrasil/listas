@@ -1,4 +1,12 @@
 ﻿# coding: utf-8
+
+=begin 
+
+ruby -w test/teste_sessao.rb -n /RunTime/
+ruby test/teste_sessao.rb
+
+=end
+
 require_relative '../lib/listas/sessao'
 # require 'benchmark'
 # require 'shoulda'

@@ -1,4 +1,12 @@
 ﻿# coding: utf-8
+
+=begin 
+
+ruby -w test/teste_assinante.rb -n /RunTime/
+ruby test/teste_assinante.rb 
+
+=end
+
 require 'test/unit'
 require 'shoulda'
 require_relative '../lib/listas/assinante.rb'

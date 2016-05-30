@@ -1,4 +1,12 @@
 ﻿# coding: utf-8
+
+=begin 
+
+ruby -w test/teste_runner.rb -n /RunTime/
+ruby test/teste_runner.rb
+
+=end
+
 require_relative '../lib/listas/sessao'
 require_relative '../lib/listas/runner'
 require_relative '../lib/listas/leitor'

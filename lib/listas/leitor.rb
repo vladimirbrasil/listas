@@ -31,9 +31,15 @@ module Listas
     # Número máximo de assinantes que cabem em cada página web que disponibiliza as informações
     MAX_ASS_POR_PAGINA = 25
     # Css que rastreia os assinantes na página web que disponibiliza as informações
+    # CSS_ASSINANTES = "td:nth-child(4)"
     CSS_ASSINANTES = "div#Content_Regs table tr td table"
+    
     # Css que rastreia o total de assinantes encontrados na página web que disponibiliza as informações
-    CSS_TOTAL_ASSINANTES = "div#Content_LocaGeo table tr td h1 span.texto_caminho_registro"
+    # //*[@id="Content_LocaGeo"]/table/tbody/tr[1]/td/span/span/text()
+    CSS_TOTAL_ASSINANTES = ".texto_caminho_registro"
+    # CSS_TOTAL_ASSINANTES = "div#Content_LocaGeo table tr td h1 span.texto_caminho_registro"
+
+
     # Css utilizada para rastrear o _nome_ do assinante dentre os assinantes disponibilizados
     CSS_STR_LEFT = "td[align='left']"
     # Css utilizada para rastrear o _telefone_ do assinante dentre os assinantes disponibilizados
@@ -183,6 +189,9 @@ module Listas
         nome = item.css(CSS_STR_LEFT).css(CSS_STR_RESULTADO).text.gsub(/^\s+|\s+$/,'') 
         telefone = item.css(CSS_STR_RIGHT).css(CSS_STR_RESULTADO).css('a')[0]['href'] unless item.css(CSS_STR_RIGHT).css(CSS_STR_RESULTADO).css('a').empty?
         endereco = item.css(CSS_STR_ENDERECO).text.gsub(/^\s+|\s+$/,'')
+
+# puts "\n\n>>>>>> \n #{nome} \n #{telefone} \n #{endereco} \n<<<<<<  \n\n"
+
         Listas::Assinante.new(nome, telefone, endereco)
       else
         false
@@ -234,7 +243,7 @@ module Listas
     def buscar_codigo_cidade(cidade = "Porto Alegre", uf = "rs")
       cidade = cidade.split.each { |x| x.capitalize! unless x.length <= 2}.join(" ")
       hash_cidades = {}
-      if File.exists?("cidades.yml") # only works with Heroku
+      if File.exist?("cidades.yml") # only works with Heroku
         File.open("cidades.yml") { |f| hash_cidades = YAML.load(f) }
       elsif File.exists?("../cidades.yml") # only works with Sinatra local host
         File.open("../cidades.yml") { |f| hash_cidades = YAML.load(f) }

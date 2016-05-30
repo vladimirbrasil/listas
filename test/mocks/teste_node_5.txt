@@ -1,0 +1,2314 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:v="urn:schemas-microsoft-com:vml" >
+<head id="Head1"><title>
+	TeleListas.net: Lista Telefônica - Telefones de empresas e pessoas - Brasil - Endereço: henrique dias - Porto Alegre - RS - TeleListas.net
+</title><meta http-equiv="content-language" content="pt-br; charset=iso-8859-1" />
+  <meta name="language" content="pt-br" /><meta name="distribution" content="Global" /><meta name="Googlebot" content="all" /><meta name="robots" content="all" /><meta name="author" content="Informações: webmaster@telelistas.net" /><meta name="Copyright" content="(c) 2000 - 2016 TeleListas.net" /><link rel="SHORTCUT ICON" href="/favicon.ico" />
+  
+  <meta name="keywords" content="TeleListas.net: Lista Telefônica - Telefones de empresas e pessoas - Brasil - Endereço: henrique dias - Porto Alegre - RS - TeleListas.net - empresas telefone mapa endereço lista CEP telefônica mapas telemar guia brasil telecom pessoas DDD localizar guia mais listas editel consulta páginas amarelas" >
+  <meta name="description" property="og:description" content="TeleListas.net: Lista Telefônica - Telefones de empresas e pessoas - Brasil - Endereço: henrique dias - Porto Alegre - RS - TeleListas.net - Busca por telefones e endereços de empresas, serviços, produtos, profissionais e pessoas. Telefones de todo Brasil. Guias de restaurantes, medicina, automóveis e cidadão. E mais: mapas digitais, pesquise preços, medicamentos genéricos, DDD, DDI, CEP." >
+  <meta property="og:title" content="TeleListas.net: Lista Telefônica - Telefones de empresas e pessoas - Brasil - Endereço: henrique dias - Porto Alegre - RS - TeleListas.net" >
+  <meta property="og:url" content="http://www.telelistas.net/rs/porto+alegre" >
+  <meta property="og:site_name" content="TeleListas.net" > 
+  <meta property="og:image" content="http://www.telelistas.net/img/faceT.png" >
+
+  <link href="//img.telelistas.net/css/style.css"
+    rel="stylesheet" type="text/css" >
+  <link href="//img.telelistas.net/css/style_form.css"
+    rel="stylesheet" type="text/css" >
+  
+  <link href="/css/stars.css"
+    rel="stylesheet" type="text/css" >
+
+  <script async type="text/javascript" src="https://apis.google.com/js/plusone.js">
+    { lang: 'pt-BR' }
+  </script>
+
+  <script async src="//static.telelistas.net/js/por_script.js"></script>
+
+  <script async type="text/javascript" src="//static.telelistas.net/js/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+  function ResizeImage(img) {
+    var width = img.clientWidth;
+    var height = img.clientHeight;
+    var wf = 113 / width;
+    var hf = 86 / height;
+    if (hf < wf) {
+      img.style.width = Math.floor(width * hf) + "px";
+      img.style.height = Math.floor(height * hf) + "px";
+    } else {
+      img.style.width = Math.floor(width * wf) + "px";
+      img.style.height = Math.floor(height * wf) + "px";
+    };
+  }; 
+</script>
+
+  <script type="text/javascript">
+    document.domain='telelistas.net'; //e.g.: document.domain='microsoft.com'
+	function fillParam(){
+	var theForm1 = document.forms['refina'];
+
+	theForm1.uf_busca.value="rs";
+	theForm1.cod_localidade.value="51000";
+	theForm1.localidade.value="";
+	theForm1.cod_bairro.value="0";
+	theForm1.bairro.value="";
+	theForm1.cod_atividade.value="-1";
+	theForm1.atividade.value="";
+	theForm1.ddd.value="0";
+	theForm1.telefone.value="";
+	theForm1.endereco.value="henrique dias";
+	theForm1.numero.value="0";
+	theForm1.nome.value="";
+	theForm1.letra.value="";
+	theForm1.pchave.value="";
+	theForm1.pagina.value="5";
+	
+	}
+
+  function Change(pName, pValue){
+  var theForm = document.forms['refina'];
+
+   if (pName == "estado"){
+      theForm.uf_busca.value = pValue;
+//      theForm.uf_auto.value = pValue;
+//      theForm.uf_rest.value = pValue;
+
+      theForm.cod_localidade.value='';
+      theForm.localidade.value='';
+      theForm.cod_bairro.value='';
+      theForm.bairro.value='';
+  	  theForm.letra.value = '';
+	  theForm.pagina.value = '1';
+   }
+   else if (pName == "estado_logradouro"){
+      theForm.uf_busca.value = pValue;
+//      theForm.uf_auto.value = pValue;
+//      theForm.uf_rest.value = pValue;
+
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == "cidade"){
+      theForm.cod_localidade.value=pValue;
+//      theForm.localidade.value=pValue;
+
+      theForm.cod_bairro.value='';
+      theForm.bairro.value='';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'bairro'){
+      theForm.cod_bairro.value=pValue;
+//      theForm.bairro.value=pValue;
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'atividade'){
+      theForm.cod_atividade.value=pValue;
+//      theForm.atividade.value=pValue;
+		theForm.ddd.value='';
+		theForm.telefone.value='';
+		theForm.endereco.value='';
+		theForm.numero.value='';
+		theForm.nome.value='';
+		theForm.pchave.value = '';
+		theForm.btnemail.value = '0';
+		theForm.btnsite.value = '0';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'vejatb'){
+      theForm.orgm.value='7';
+      theForm.cod_atividade.value=pValue;
+//      theForm.atividade.value=pValue;
+		theForm.pchave.value = '';
+		theForm.btnemail.value = '0';
+		theForm.btnsite.value = '0';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'letra'){
+		theForm.letra.value = pValue;
+		theForm.pagina.value = '1';
+	}
+	else if (pName == 'pagina'){
+		theForm.pagina.value = pValue;
+	}
+   else if (pName == 'nome'){
+      theForm.cod_atividade.value='';
+      theForm.atividade.value='';
+		theForm.ddd.value='';
+		theForm.telefone.value='';
+		theForm.endereco.value='';
+		theForm.numero.value='';
+		theForm.nome.value="";
+		theForm.pchave.value = '';
+		theForm.btnemail.value = '0';
+		theForm.btnsite.value = '0';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else if (pName == 'completo'){
+		theForm.pchave.value = '';
+		theForm.btnemail.value = '0';
+		theForm.btnsite.value = '0';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+   }
+   else {
+       if (theForm.pchave.value != document.getElementById("refkeyword").value && document.getElementById("refkeyword").value != 'Digite uma palavra' && document.getElementById("refkeyword").disabled==false){
+            theForm.pchave.value = document.getElementById("refkeyword").value;
+        }
+        else if (theForm.btnemail.value == document.getElementById("refbtnemail").value && theForm.btnsite.value == document.getElementById("refbtnsite").value && (document.getElementById("refkeyword").disabled==true || theForm.pchave.value == document.getElementById("refkeyword").value)){
+            alert('Não há nada para refinar');
+            return false;
+        }
+        
+      if (document.getElementById("refkeyword").value == 'Digite uma palavra')
+         document.getElementById("refkeyword").value = '';
+		theForm.letra.value = '';
+		theForm.pagina.value = '1';
+    }
+		theForm.submit();
+  }
+
+  function maplink(link){
+     if(screen.height > 600)
+        window.open(link, 'Mapa', 'scrollbars=yes,width=670,height=605,resizeable=no,status=yes');
+     else
+        window.open(link, 'Mapa', 'scrollbars=yes,width=670,height=500,resizeable=no,status=yes');
+  }
+
+  function popUpCallFree(idRegistry, url)
+  {
+   window.open(url,'callfree','scrollbars=yes,width=398,height=513,resizeable=no,status=yes,scrollbars=no');
+  }
+
+  function popTorpedo(idRegistry)
+  {
+   window.open('/torpedos/pop_tim.aspx?idrgstr=' + idRegistry,'torpedo','scrollbars=yes,width=466,height=328,resizeable=no,status=yes');
+  }
+
+  function npInstrucoes()
+  {
+  	if (document.getElementById('npInstrucoes').style.display == "none")
+	{
+	document.getElementById('npInstrucoes').style.display = "block";
+	}
+	else 
+	{
+	document.getElementById('npInstrucoes').style.display = "none";
+	}
+  }
+  
+  function npInstrucoesFechar()
+  {
+  	document.getElementById('npInstrucoes').style.display = "none";
+  }
+
+  </script>
+
+
+
+  <script type="text/javascript" src="//static.telelistas.net/js/AjaxWrapper-1.0.1.min.js"></script>
+  <script type="text/javascript" src="//static.telelistas.net/js/Placeholders.min.js" ></script>
+  <script type="text/javascript" src="//static.telelistas.net/js/google_h.js"></script>
+  
+  <script type="text/javascript" src="//static.telelistas.net/js/funcoes.js"></script>
+  
+  <script type="text/javascript" src="//static.telelistas.net/js/yahoo-dom-event.js"></script>
+  <script type="text/javascript" src="//static.telelistas.net/js/connection-min.js"></script>
+  
+  <script type="text/javascript" src="//static.telelistas.net/js/master.js"></script>
+  </head>
+  
+<body  bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="masterOnLoad()">
+      
+        <table width="980" border="0" cellspacing="0" cellpadding="0" align="center">
+	
+	      	<tr valign="top">
+			      <td colspan="7" align="center">
+              
+
+<script type="text/javascript" >
+
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+
+function NormalizaEspacos(obj){
+  obj.value = obj.value.replace(/\s+/g," ");
+  obj.value = obj.value.replace(/^\s+/,"");
+  obj.value = obj.value.replace(/\s+$/,"");
+}
+</script>
+
+
+
+
+
+
+
+<div id="Topo_pnlTopoInterno">
+	
+
+  <script type="text/javascript" >
+		var userIsLogged;
+		var search = "endereco";
+		var debug = false;
+		userIsLogged = true;
+
+		//Exibe a caixa de busca informada, escondendo a anteriormente exibida
+		function exibeCaixaBuscaInt(caixa) {
+		    if (caixa == "atual")
+		        return;
+			var objCaixa = document.getElementById("cx_" + caixa + "_int");
+			
+			if (caixa != "assunto" && (userIsLogged || caixa == "palavrachave" || caixa == "pessoa")) {
+				escondeCaixasBuscaInt(); //esconde todas as caixas
+			    if (caixa != "assunto")
+			        objCaixa.style.display = "block";
+    				
+			    switch (caixa) {
+				    case "telefone":
+					    document.frmTelefone.ddd.focus();
+					    break;
+				    case "endereco":
+					    document.frmEndereco.endereco.focus();
+					    break;
+				    case "pessoa":
+					    document.frmPessoa.nome.focus();
+					    break;
+				    case "assunto":
+					    location.href = "//www.telelistas.net/templates/busca_assunto.aspx";
+					    break;
+				    default:
+					    document.frmPalavrachave.atividade.focus();
+			    }
+			}
+			else {
+				if (caixa == "telefone")
+					location.href = "//www.telelistas.net/templates/form_login.aspx?search=telefone&returnurl=/?search=telefone";
+				else if (caixa == "endereco")
+					location.href = "//www.telelistas.net/templates/form_login.aspx?search=endereco&returnurl=/?search=endereco";
+				else if (caixa == "assunto")
+					location.href = "//www.telelistas.net/templates/busca_assunto.aspx";
+			}
+		}
+		
+		//Esconde todas as caixas de busca
+		function escondeCaixasBuscaInt() {
+			document.getElementById("cx_telefone_int").style.display = "none";
+			document.getElementById("cx_endereco_int").style.display = "none";
+			document.getElementById("cx_palavrachave_int").style.display = "none";
+			document.getElementById("cx_pessoa_int").style.display = "none";
+		}
+		
+	function validaFormPalavraChave(form){
+
+	    var estadosArray = new Array("", "Acre","Alagoas","Amazonas","Amapá","Bahia","Ceará","Distrito Federal","Espírito Santo","Goiás","Maranhão","Minas Gerais","Mato Grosso do Sul","Mato Grosso","Pará","Paraíba","Pernambuco","Piauí","Paraná","Rio de Janeiro","Rio Grande do Norte","Rondônia","Roraima","Rio Grande do Sul","Santa Catarina","Sergipe","São Paulo","Tocantins");
+		if ((form.nome.value=='') && (form.atividade.value=='')){
+			alert('Preencha o campo Palavra-Chave ou o campo Nome.');
+			form.atividade.focus();
+			return false;
+		}
+
+    if (form.uf_busca.selectedIndex ==0){
+      form.cod_localidade.value = ''
+    }
+
+		if ((form.cod_localidade.value != '') && 
+		    (form.cod_localidade.value != '0') && 
+		    (form.uf_busca.selectedIndex ==0) &&
+		    (pch_localidade_select.options.length > 1) &&
+		    (pch_localidade_select.textContent != "Selecione")){
+			alert('Selecione um estado.');
+			form.uf_busca.focus();
+			return false;
+		}
+
+		var localizacao='';
+
+			//alert(document.getElementById('pch_localidade_select').options[document.getElementById('pch_localidade_select').selectedIndex].value);
+
+		if (document.getElementById('pch_localidade_select').options[document.getElementById('pch_localidade_select').selectedIndex].value != ''){
+		    localizacao = document.getElementById('pch_localidade_select').options[document.getElementById('pch_localidade_select').selectedIndex].text;
+		    }
+		else if ($('uf_busca').selectedIndex > 0)
+		    localizacao = estadosArray[$('uf_busca').selectedIndex];
+		form.q.value=form.atividade.value;
+		if (form.q.value != '' && localizacao != '')
+		    form.q.value += '+' + localizacao;
+	}
+
+	function validaFormEndereco(form){
+		if (form.endereco.value==''){
+			alert('Preencha o campo logradouro.');
+			form.endereco.focus();
+			return false;
+		}
+		
+		if (form.numero.value != ''){
+			if (!form.numero.value.match(/\d+/)){
+				alert('Numero incorreto.');
+				form.numero.select();
+				return false;
+			}
+		}
+		
+		if (form.uf_busca.selectedIndex==0){
+			alert('Selecione o estado.');
+			form.uf_busca.focus();
+			return false;
+		}
+		
+		if (form.cod_localidade.value == '0' || form.cod_localidade.value == ''){
+			alert('Selecione a cidade.');
+			return false;
+		}
+	}
+
+	function validaFormTelefone(form){
+		if (form.telefone.value==''){
+			alert('Preencha o campo telefone.');
+			form.telefone.focus();
+			return false;
+		}
+		else{
+			if (form.telefone.value.match(/^(0800|\d{3,4})\-*\d\d\d\d\d$/) || form.telefone.value.match(/^0(3|8)00\-*\d{6,9}$/)){
+				if (form.telefone.value.match(/^0800/)){
+					form.ddd.value = '';
+				}
+			}
+			else{
+				alert ('Telefone incorreto.');
+				form.telefone.select();
+				return false;
+			}
+		}
+		return true;
+	}
+
+	function validaFormPessoa(form){
+		if ((form.nome.value=='')){
+			alert('Preencha o campo Nome.');
+			form.nome.focus();
+			return false;
+		}
+	}
+
+
+  </script>
+
+  <script src="//static.telelistas.net/js/caixa_busca.js"
+    type="text/javascript"></script>
+
+  <div id="topo_portal_global">
+    <div class="logoWrapper">
+      <div id="logo_topo">
+        <a href="//www.telelistas.net/" title="TeleListas.net">
+          <img src="//img.telelistas.net/img/logo_topo_portal_b_01.gif" width="240" height="47" border="0" alt="TeleListas.net">
+        </a>
+      </div>
+      <div id="banner_topo">
+        <span class="banner_topo">
+          <div id='div-gpt-ad-1371565546828-0' style='width:728px; height:90px;'> 
+                                   <script language='javascript' type='text/javascript'> 
+                                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1371565546828-0'); });  
+                                   </script>  
+                                 </div>
+        </span>
+      </div>
+    </div>
+    <!--/logoWrapper-->
+    <div id="topo_portal">
+      <div id="menu_topo_portal">
+        <ul class="menu_topo_portal">
+          <li id="Topo_liBuscaInterno" class="menu_topo_portal_on">
+            <a href="//www.telelistas.net/" target="_self" title="Ache empresas, profissionais e pessoas">Busca </a>
+          </li>
+          <li id="Topo_liBuscaLocalInterno" class="menu_topo_portal_off">
+            <a rel="nofollow" href="//www.telelistas.net/busca_local/busca_local.aspx" target="_self" title="Ache empresas perto de você">Mapas </a>
+          </li>
+          <li id="Topo_liPesquisePrecosInterno" class="menu_topo_portal_off">
+            <a rel="nofollow" href="http://www.pesquiseprecos.telelistas.net" target="_self" title="Pesquise Preços">Pesquise Preços </a>
+          </li>
+          <li class="menu_topo_portal_off" id="liPesquisePrecos">
+            <a rel="nofollow" href="http://telelistas.mundi.com.br"  target="_self" title="TeleListas.net Viagens">Viagens </a>
+          </li>
+          <li class="menu_topo_portal_off" id="liOfertas">
+            <a rel="nofollow" href="http://www.ophertas.net" target="_blank" title="Ophertas">Ophertas </a>
+          </li>
+          <li class="menu_topo_portal_off" id="liBlog">
+            <a rel="nofollow" href="http://www.telelistas.net/blog" title="Blog da TeleListas">Blog </a>
+          </li>
+        </ul>
+        <div id="divanuncieaqui">
+          <a class="anuncieaqui" rel="nofollow" href="//www.telelistas.net/templates/anuncie.aspx" target="_self" title="Cadastre grátis sua empresa">Anúncio Grátis</a> 
+          <a class="anuncieaqui" rel="nofollow" href="https://wwws.telelistas.net/" target="_self" title="Anuncie">Anúncios Prime</a> 
+          <a class="anuncieaqui" rel="nofollow" href="//www.telelistas.net/templates/telelistas_sites.aspx" target="_self" title="Tenha um site">Tenha um Site</a>
+          <a class="anuncieaqui" rel="nofollow" href="https://areadeclientes.telelistas.net" target="_self" title="Área de Clientes" style="background-color: #FD9C00; color: black;">Área de Clientes</a>
+        </div>
+        
+        <div id="outras-buscas" style="display: block;">
+          <span class="field_formint_outras_buscas">
+            <label class="label_formint" for="outrasbuscaspch">
+              Outras buscas &nbsp;</label>
+            <select id="outrasbuscaspch" class="formint_assunto_topo" name="outrasbuscas" onchange="exibeCaixaBuscaInt(this.value);this.selectedIndex=0;"
+              tabindex="7" title="Outras buscas">
+              <option selected value="atual">Selecione</option>
+              <option value="palavrachave">Palavra-Chave/Nome</option>
+              <option value="assunto">Assunto</option>
+              <option value="endereco">Endereço</option>
+              <option value="pessoa">Pessoas</option>
+              <option value="telefone">Telefone</option>
+            </select>
+          </span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div id="caixa_interna">
+    <div id="cx_palavrachave_int" style="display: none;">
+      <form action="//www.telelistas.net/templates/resultado_busca.aspx"
+      name="frmPalavrachave" onsubmit="return validaFormPalavraChave(this);" style="padding: 0;
+      margin: 0;">
+      <span class="field_formint_palachave_nome">
+        <input type="hidden" name="q" value="" />
+        <input name="orgm" type="hidden" value="8" />
+        
+        <input id="pch_cod_localidade" name="cod_localidade" type="hidden" value="51000" />
+        <input id="pch_cod_bairro" name="cod_bairro" type="hidden" value="0" />
+        <input id="pch_cod_atividade" name="cod_atividade" type="hidden" value="" />
+        <input id="pch_atividade_origem" name="atividade_origem" type="hidden" value="" />
+        
+        
+        <label class="label_formint" for="atividade">
+          <strong>Palavra-chave</strong></label>
+        <input id="atividade" class="formint_palachave_nome" autocomplete="off" name="atividade" onblur="NormalizaEspacos(this);"
+          onchange="NormalizaEspacos(this);" tabindex="1" title="Palavra-Chave" type="text"
+          value="" />
+      </span><span class="field_formint_palachave_nome">
+        <label class="label_formint" for="nome_palachave">
+          <strong>Nome</strong></label>
+        <input id="nome_palachave" class="formint_palachave_nome" autocomplete="off" name="nome" onblur="NormalizaEspacos(this);"
+          onchange="NormalizaEspacos(this);" tabindex="2" title="Nome" type="text" value="" />
+      </span>
+      <span class="field_formint_estado">
+        <label class="label_formint" for="EstadosPch">
+        <strong>UF</strong></label>
+        <select name='uf_busca' id='uf_busca' onChange="alteraUFInterna(this, 'pch_localidade_select', document.getElementById('pch_cod_localidade'), document.getElementById('pch_loc'), 'pch_bairro_select', document.getElementById('pch_cod_bairro'), document.getElementById('pch_bairro'));"  title='Estado' tabindex='3'  class='formint_estado'><option value='br'>BR</option><option value='ac'>AC</option><option value='al'>AL</option><option value='am'>AM</option><option value='ap'>AP</option><option value='ba'>BA</option><option value='ce'>CE</option><option value='df'>DF</option><option value='es'>ES</option><option value='go'>GO</option><option value='ma'>MA</option><option value='mg'>MG</option><option value='ms'>MS</option><option value='mt'>MT</option><option value='pa'>PA</option><option value='pb'>PB</option><option value='pe'>PE</option><option value='pi'>PI</option><option value='pr'>PR</option><option value='rj'>RJ</option><option value='rn'>RN</option><option value='ro'>RO</option><option value='rr'>RR</option><option selected value='rs'>RS</option><option value='sc'>SC</option><option value='se'>SE</option><option value='sp'>SP</option><option value='to'>TO</option></select>
+      </span>
+      <span class="field_formint_cidade">
+        <label class="label_formint" for="pch_localidade_select">
+          <strong>Cidade</strong></label>
+        <div id="pch_loc">
+          <select id="pch_localidade_select" class="busca_interna" name="localidade_select" tabindex="4">
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </span><span class="field_formint_bairro">
+        <label class="label_formint" for="pch_bairro_select">
+          <strong>Bairro</strong></label>
+        <div id="pch_bairro">
+          <select id="pch_bairro_select" class="busca_interna_bairro" name="bairro_select" tabindex="5">
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </span><span class="field_formint_buttom_int" style="padding: 12px 0px 0px 0px;">
+        <input alt="Buscar" tabindex="6" border="0" class="botao_famarelo" src="//img.telelistas.net/img/por_bot_buscar_int.gif"
+          title="Buscar" type="image" />
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;</form>
+    </div>
+
+
+    <div id="cx_endereco_int" style="display: block;">
+      
+      <form action="//www.telelistas.net/templates/resultado_busca.aspx"
+      name="frmEndereco" onsubmit="return validaFormEndereco(this);" style="padding: 0;
+      margin: 0;">
+      <input name="orgm" type="hidden" value="8" />
+      <input id="end_cod_localidade" name="cod_localidade" type="hidden" value="51000" />
+      
+      <span class="field_formint_logradouro">
+        <label class="label_formint" for="endereco">
+          <strong>Nome do Logradouro</strong></label>
+        <input id="endereco" class='formint_logradouro'
+          class="formint_logradouro" name="endereco" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);"
+          tabindex="1" title="Logradouro" type="text" value="henrique dias" />
+      </span><span class="field_formint_numero">
+        
+        <label class="label_formint" for="numero">
+        <strong>Nº</strong></label>
+        <input id="numero" 
+          class="formint_numero" name="numero" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);"
+          tabindex="2" title="Numero" type="text" value="0" />
+      </span><span class="field_formint_estado">
+        
+        <label class="label_formint" for="EstadosEnd">
+        <strong>UF</strong></label>
+        <select name='uf_busca' id='uf_busca' onChange="alteraUF(this, 'end_localidade_select', $('end_cod_localidade'), $('end_loc'));"  title='Estado'  class='formint_estado'><option value='br'>BR</option><option value='ac'>AC</option><option value='al'>AL</option><option value='am'>AM</option><option value='ap'>AP</option><option value='ba'>BA</option><option value='ce'>CE</option><option value='df'>DF</option><option value='es'>ES</option><option value='go'>GO</option><option value='ma'>MA</option><option value='mg'>MG</option><option value='ms'>MS</option><option value='mt'>MT</option><option value='pa'>PA</option><option value='pb'>PB</option><option value='pe'>PE</option><option value='pi'>PI</option><option value='pr'>PR</option><option value='rj'>RJ</option><option value='rn'>RN</option><option value='ro'>RO</option><option value='rr'>RR</option><option selected value='rs'>RS</option><option value='sc'>SC</option><option value='se'>SE</option><option value='sp'>SP</option><option value='to'>TO</option></select>
+      </span><span class="field_formint_cidade">
+        <label class="label_formint" for="end_localidade_select">
+          <strong>Cidade</strong></label>
+        <div id="end_loc">
+          <select id="end_localidade_select" class='busca_interna'
+            name="localidade_select">
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </span><span class="field_formint_buttom">
+        <input alt="Buscar" border="0" class="botao_famarelo" src="//img.telelistas.net/img/por_bot_buscar.gif"
+          title="Buscar" type="image" />
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      </form>
+      
+    </div>
+    
+
+    <script type="text/javascript">
+      alteraUF(document.frmEndereco.uf_busca, 'end_localidade_select', $('end_cod_localidade'), $('end_loc'));
+    </script>
+
+    
+    <div id="cx_telefone_int" style="display: none;">
+      
+      <form action="//www.telelistas.net/templates/resultado_busca.aspx" method="get" name="frmTelefone"
+      onsubmit="return validaFormTelefone(this);" style="padding: 0; margin: 0;">
+      <input name="orgm" type="hidden" value="8">
+      
+      <span class="field_formint_numero">
+        <label class="label_formint" for="ddd">
+          <strong>DDD</strong></label>
+        <input id="ddd" 
+          class="formint_numero" name="ddd" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);"
+          tabindex="1" title="DDD" type="text" value="0" />
+      </span><span class="field_formint_palachave_nome">
+        <label class="label_formint" for="telefone">
+        <strong>Telefone</strong><span class="text_labelmenor_newbox"> (Comercial)</span></label>
+        <input id="telefone" class='formint_palachave_nome'
+          name="telefone" onblur="NormalizaEspacos(this);" onchange="NormalizaEspacos(this);"
+          tabindex="2" title="Telefone" type="text" value="" />
+      </span><span class="field_formint_estado2">
+        <label class="label_formint" for="EstadosTel">
+        <strong>Estado</strong></label>
+        <select name='uf_busca' id='uf_busca' onChange=""  title='Estado'  class='formint_estado2'><option value='br'>Todo Brasil</option><option value='ac'>Acre</option><option value='al'>Alagoas</option><option value='ap'>Amapá</option><option value='am'>Amazonas</option><option value='ba'>Bahia</option><option value='ce'>Ceará</option><option value='df'>Distrito Federal</option><option value='es'>Espírito Santo</option><option value='go'>Goiás</option><option value='ma'>Maranhão</option><option value='mt'>Mato Grosso</option><option value='ms'>Mato Grosso do Sul</option><option value='mg'>Minas Gerais</option><option value='pa'>Pará</option><option value='pb'>Paraíba</option><option value='pr'>Paraná</option><option value='pe'>Pernambuco</option><option value='pi'>Piauí</option><option value='rj'>Rio de Janeiro</option><option value='rn'>Rio Grande do Norte</option><option selected value='rs'>Rio Grande do Sul</option><option value='ro'>Rondônia</option><option value='rr'>Roraima</option><option value='sc'>Santa Catarina</option><option value='sp'>São Paulo</option><option value='se'>Sergipe</option><option value='to'>Tocantins</option></select>
+      </span><span class="field_formint_buttom">
+        <input type="image" alt="Buscar" border="0" border="0" class="botao_famarelo" src="//img.telelistas.net/img/por_bot_buscar.gif"
+          title="Buscar" />
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      </form>
+      
+    </div>
+    <div id="cx_pessoa_int" style="display: none;">
+      <form action="//www.telelistas.net/templates/resultado_busca.aspx" method="get" name="frmPessoa"
+      onsubmit="return validaFormPessoa(this);" style="padding: 0; margin: 0;" target="_parent">
+      <input name="orgm" type="hidden" value="8" />
+      <input id="pes_cod_localidade" name="cod_localidade" type="hidden" value="51000" />
+      <input id="pes_cod_bairro" name="cod_bairro" type="hidden" value="0" />
+      <input id="residencial" name="residencial" type="hidden" value="1" />
+      <span class="field_formint_nome">
+        <label class="label_formint" for="nome_pes">
+          <strong>Nome</strong></label>
+        <input id="nome_pes" class="formint_nome" name="nome" onblur="NormalizaEspacos(this);"
+          onchange="NormalizaEspacos(this);" tabindex="1" title="Nome" type="text" value="" />
+      </span><span class="field_formint_estado">
+        
+        <label class="label_formint" for="EstadosPes">
+        <strong>UF</strong></label>
+        <select name='uf_busca' id='uf_busca' onChange="alteraUFInterna(this, 'pes_localidade_select', document.getElementById('pes_cod_localidade'), document.getElementById('pes_loc'), 'pes_bairro_select', document.getElementById('pes_cod_bairro'), document.getElementById('pes_bairro'));"  title='Estado' tabindex='2'  class='formint_estado'><option value='br'>BR</option><option value='ac'>AC</option><option value='al'>AL</option><option value='am'>AM</option><option value='ap'>AP</option><option value='ba'>BA</option><option value='ce'>CE</option><option value='df'>DF</option><option value='es'>ES</option><option value='go'>GO</option><option value='ma'>MA</option><option value='mg'>MG</option><option value='ms'>MS</option><option value='mt'>MT</option><option value='pa'>PA</option><option value='pb'>PB</option><option value='pe'>PE</option><option value='pi'>PI</option><option value='pr'>PR</option><option value='rj'>RJ</option><option value='rn'>RN</option><option value='ro'>RO</option><option value='rr'>RR</option><option selected value='rs'>RS</option><option value='sc'>SC</option><option value='se'>SE</option><option value='sp'>SP</option><option value='to'>TO</option></select>
+      </span><span class="field_formint_cidade">
+        <label class="label_formint" for="pes_localidade_select">
+          <strong>Cidade</strong></label>
+        <div id="pes_loc">
+          <select id="pes_localidade_select" class="busca_interna" name="localidade_select" tabindex="3">
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </span><span class="field_formint_bairro">
+        <label class="label_formint" for="pes_bairro_select">
+          <strong>Bairro</strong></label>
+        <div id="pes_bairro">
+          <select id="pes_bairro_select" class="busca_interna_bairro" name="bairro_select" tabindex="4">
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </span><span class="field_formint_buttom_int" style="padding: 12px 0px 0px 0px;">
+        <input alt="Buscar" border="0" class="botao_famarelo" tabindex="5" src="//img.telelistas.net/img/por_bot_buscar_int.gif"
+          title="Buscar" type="image" />
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;</form>
+    </div>
+
+    <script type="text/javascript">
+      alteraUFInterna(document.frmPessoa.uf_busca, 'pes_localidade_select', document.getElementById('pes_cod_localidade'), document.getElementById('pes_loc'), 'pes_bairro_select', document.getElementById('pes_cod_bairro'), document.getElementById('pes_bairro'));
+    </script>
+
+  </div>
+
+</div>
+    <script>
+      var pchave = document.frmPalavrachave;
+      if (pchave) {
+        alteraUFInterna(document.frmPalavrachave.uf_busca, 'pch_localidade_select', document.getElementById('pch_cod_localidade'), document.getElementById('pch_loc'), 'pch_bairro_select', document.getElementById('pch_cod_bairro'), document.getElementById('pch_bairro'));
+      }
+    </script>
+			      </td>
+		      </tr>
+	
+<tr>
+<td style="padding: 5px 0 0 10px;" width="100%" height="10px" valign="middle" colspan="7" >
+<span vocab="http://schema.org/" typeof="BreadcrumbList"> 
+                
+              </span>
+</td>
+</tr>
+  <tr>
+    <td colspan="7" height="10">
+    </td>
+  </tr>
+  <tr>
+    <td width="10">
+      &nbsp;
+    </td>
+    <td width="152" align="center" valign="top">
+      <table width="152" border="0" cellspacing="0" cellpadding="0">
+        
+        <tr>
+          <td>
+            <div id="Content_Refino">
+	
+<script>
+   function Refino(obj){
+      var theForm = document.forms['refina'];
+      var paramName = obj.name.substring(3, obj.name.length);
+      
+      if (obj.checked)
+         theForm.elements[paramName].value=1;
+      else
+         theForm.elements[paramName].value=0;
+   }
+</script>
+<table width="152" border="0" cellpadding="1" cellspacing="0" bgcolor="BDCAD7">
+  <tr> 
+    <td><table width="150" border="0" cellpadding="0" cellspacing="0" bgcolor="E0E6EC">
+        <tr> 
+          <td align="center" valign="top"><img height="18" src="//img.telelistas.net/img/por_tcaixa_refina.gif" title="Avançado" width="150"></td>
+        </tr>
+        <tr> 
+          <td height="7" align="center"></td>
+        </tr>
+        <tr> 
+          <td align="center" valign="top"><table width="136" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="2" class="text_medio">Ver <strong>apenas</strong> 
+                  resultados contendo:</td>
+              </tr>
+              
+              <tr> 
+                <td  width="20" valign="middle" class="text_medio"><input id="refbtnsite"   class="check_refina" name="refbtnsite" onclick="Refino(this);" type="checkbox" value="0"> 
+                </td>
+                <td width="116" valign="middle" class="text_medio">
+<label for="refbtnsite">Site</label></td>
+              </tr>
+              <tr> 
+                <td width="20" valign="middle" class="text_medio"> <input id="refbtnemail"   class="check_refina" name="refbtnemail" onclick="Refino(this);" type="checkbox" value="0"> 
+                </td>
+                <td width="116" valign="middle" class="text_medio"> <label for="refbtnemail">E-mail</label></td>
+              </tr>
+              
+              <tr> 
+                <td  width="20" valign="middle" class="text_medio"> 
+                  <input id="refbtnpalvra" class="check_refina"  onclick='if(document.getElementById("refkeyword").disabled==false){document.getElementById("refkeyword").disabled=true;document.getElementById("refkeyword").style.background="#F1F1F1";}else{document.getElementById("refkeyword").disabled=false;document.getElementById("refkeyword").style.background="#fff";}'  name="refbtnpalavra" type="checkbox" value="1">
+                </td>
+                <td width="116" valign="middle" class="text_medio"> 
+                  <label for="refbtnpalavra">Palavra(s):</label></td>
+              </tr>
+              <tr> 
+                <td colspan="2"><input id="refkeyword" disabled  name="refkeyword" type="text" class="refina" value="Digite uma palavra" onfocus="if (this.value=='Digite uma palavra') this.value='';" onblur="if (this.value=='') this.value='Digite uma palavra';"></td>
+              </tr>
+              
+              <tr> 
+                <td height="30" colspan="2" align="center" valign="middle"><input  border="0" height="18" onclick="Change();" src="//img.telelistas.net/img/por_bot_refina.gif" title="Refinar" type="image" width="88"> 
+                </td>
+              </tr>
+              
+            </table>		
+			</td>
+        </tr>
+	
+    </table></td>
+  </tr>
+</table>
+
+</div>
+          </td>
+        </tr>
+        <tr>
+          <td height="10">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="Content_VejaTb">
+
+</div>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+<!--inicio menu guias-->
+<div id="menu_portal">
+			<ul>
+				<li class="menucaption">Guias Especiais</li>
+				<li><a href="//www.telelistas.net/busca_local/busca_local.aspx" title="Mapas e Rotas" target="_self" rel="nofollow">Mapas & Rotas</a></li>
+				<li><a href="//www.telelistas.net/guias/hotel" title="Guia de Viagens" target="_self" rel="nofollow">Turismo</a></li>
+				<li><a href="//www.telelistas.net/guias/restaurante" title="Guia de Restaurantes" target="_self" rel="nofollow">Restaurantes</a></li>
+				<li><a href="//www.telelistas.net/guias/automoveis" title="Guia de Automóveis" target="_self" rel="nofollow">Automóveis</a></li>
+				<li><a href="//www.telelistas.net/guias/laboratorio" title="Guia de Medicina e Saúde" target="_self" rel="nofollow">Medicina e Saúde</a></li>
+				<li><a href="//www.telelistas.net/templates/resultado_busca.aspx?q=24&orgm=0&cod_localidade=&atividade=24&nome=&uf_busca=br" title="Guia 24 Horas" target="_self" rel="nofollow">24 Horas</a></li>
+				<li><a href="//www.telelistas.net/guias/orgaos-publicos" title="Guia do Cidadão" rel="nofollow">Cidadão</a></li>
+				<li><a href="//www.telelistas.net/DDD" title="DDD">DDD</a></li>
+				<li><a href="//www.telelistas.net/DDI" title="DDI">DDI</a></li>
+				<li><a href="//www.telelistas.net/templates/telefones_uteis.aspx" title="Telefones Úteis" rel="nofollow">Telefones Úteis</a></li>
+			</ul>
+</div>	
+
+<!--fim_menu_guias-->
+          </td>
+        </tr>
+        <tr>
+          <td height="10">
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+
+<div id="menu_portal2">
+ <ul>
+  <li class="menucaption">Meu TeleListas</li>
+  <li><a rel="nofollow" href="/templates/promocoes.aspx" title="Promoções TeleListas.net" target="_self">Promoções</a></li>
+  <li><a href="/templates/form_login.aspx?ReturnUrl=%2fsecurityfiles%2fmeu_telelistas.aspx" title="Meu Cadastro" target="_self" rel="nofollow">Login e Cadastro</a></li>
+  <li><a rel="nofollow" href="/templates/busca_celular.aspx" title="Busca no Celular" target="_self">Busca no Celular</a></li>
+  <li><a rel="nofollow" href="/templates/telesite.aspx" title="TeleListas no seu site" target="_self">Busca no seu site</a></li>
+  <li><a href="/templates/form_fale.aspx" title="Fale Conosco" target="_self" rel="nofollow">Fale Conosco</a></li>
+ </ul>
+</div>
+<!--[if !IE]>topo do infoplus com servicos e abas<![endif]-->	
+<!--
+<div style="clear:both;"></div>
+<div style="margin:10px 0 0 0; text-align:left;">
+	
+		<script type="text/javascript">var addthis_pub="anipet";
+		var addthis_options = 'twitter, google, yahoobkm, facebook, live, digg, linkedin, more';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php?v=20" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/lg-bookmark-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
+</div>	 -->
+<!--[if !IE]>topo do infoplus com servicos e abas<![endif]-->
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="10">
+    </td>
+    <td width="468" valign="top" align="center">
+      <table width="468" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" valign="top" bgcolor="F4F8FA">
+            <div id="Content_LocaGeo">
+	
+
+<script>
+    function RestService(obj) {
+        var theForm = document.forms['refina'];
+        var paramName = obj.name.substring(3, obj.name.length);
+
+        if (obj.checked)
+            theForm.elements[paramName].value = 1;
+        else
+            theForm.elements[paramName].value = 0;
+    }
+
+    function toggle() {
+        var texto = document.getElementById("textoAtividade");
+        if (texto.style.display == 'none') 
+         {
+            texto.style.display = '';
+        }
+        else 
+        {
+            texto.style.display = 'none';
+        }
+    }
+</script>
+
+<table width="468" border="0" cellspacing="0" cellpadding="0">
+    
+    <tr>
+        <td height="20" valign="top" valign="top" style="background-color: #0D79A1;padding: 0 0 0 10px;">
+            <span style="line-height: normal; padding: 2px 0; font-size: 12px; margin: 0; font-weight: normal; display: block;">
+                <a class="caminho_registro" target="_self" href="/">TeleListas.net</a>
+                <img src="//img.telelistas.net/img/por_seta_caminho.gif" width="19" height="7" />
+                <span class="texto_caminho_registro">
+                       <h1 style="line-height: normal; padding: 2px 0; font-size: 12px; margin: 0; font-weight: normal; display: inline;"> 
+                       henrique dias</h1>
+                       (104)
+                </span>
+             </span>
+        </td>
+    </tr>
+    
+    <form id="refina" action="/templates/resultado_busca.aspx"
+    method="post" name="refina">
+    <input type="hidden" name="uf_busca" value="rs">
+<input type="hidden" name="pag_resultado" value="1">
+<input type="hidden" name="orgm" value="0">
+<input type="hidden" name="localidade" value="">
+<input type="hidden" name="cod_localidade" value="51000">
+<input type="hidden" name="bairro" value="">
+<input type="hidden" name="cod_bairro" value="0">
+<input type="hidden" name="pagina" value="5">
+<input type="hidden" name="atividade" value="">
+<input type="hidden" name="cod_atividade" value="-1">
+<input type="hidden" name="nome" value="">
+<input type="hidden" name="endereco" value="henrique dias">
+<input type="hidden" name="numero" value="0">
+<input type="hidden" name="ddd" value="0">
+<input type="hidden" name="telefone" value="">
+<input type="hidden" name="residencial" value="0">
+<input type="hidden" name="comercial" value="0">
+<input type="hidden" name="btnemail" value="0">
+<input type="hidden" name="btnsite" value="0">
+<input type="hidden" name="pchave" value="">
+<input type="hidden" name="letra" value="">
+<input type="hidden" name="pcount" value="25">
+<input type="hidden" name="randsort" value="126896249">
+
+    <input type="hidden" name="resultado_letras" value="A,B,C,D,E,F,G,H,I,J,K,L,M,N,P,R,S,T,V,Z" />
+    <input type="hidden" name="cod_assunto" value="" />
+    </form>
+    <div id="marca_registrada" style="display: none;">
+        <p>
+            <span id="palavra_chave"></span>&nbsp;é uma marca registrada.<br>
+            Procure nos itens abaixo</p>
+    </div>
+    
+    
+    <tr>
+        <td align="center" valign="bottom">
+            <table width="468" height="20" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    
+                    <td width="26" height="20" align="center" valign="middle"
+                        class="text_medio">
+                        0-9
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'A');return false;">A</a>
+                                                  
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'B');return false;">B</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'C');return false;">C</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'D');return false;">D</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'E');return false;">E</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'F');return false;">F</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'G');return false;">G</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'H');return false;">H</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'I');return false;">I</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'J');return false;">J</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'K');return false;">K</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'L');return false;">L</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'M');return false;">M</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'N');return false;">N</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle"
+                        class="text_medio">
+                        O
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'P');return false;">P</a>
+                                                  
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle"
+                        class="text_medio">
+                        Q
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'R');return false;">R</a>
+                                                  
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'S');return false;">S</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'T');return false;">T</a>
+                          
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle"
+                        class="text_medio">
+                        U
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'V');return false;">V</a>
+                                                  
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle"
+                        class="text_medio">
+                        W
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle"
+                        class="text_medio">
+                        X
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center" valign="middle"
+                        class="text_medio">
+                        Y
+                    </td>
+                    
+                    <td width="1" bgcolor="DADADA">
+                    </td>
+                    
+                    <td width="16" height="20" align="center"
+                        valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                        class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'Z');return false;">Z</a>
+                                                  
+                    </td>
+                    
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+    </tr>
+</table>
+<!-- fim caixa_locageo -->
+</div>
+          </td>
+        </tr>
+        <tr>
+          <td height="5" bgcolor="F4F8FA">
+          </td>
+        </tr>
+        <tr>
+         <td align="center" valign="top">
+          <div id="Content_Regs">
+	
+
+<div id="adcontainerRBIB" class="_gads_"></div>
+ <script type="text/javascript" charset="utf-8">
+   var pageOptionsRBIB = {
+     'pubId': 'pub-6898378105006882',
+     'query': '',
+     'channel': '9504759907',
+     'hl': 'pt',
+     'adPage': 1,
+     'plusOnes': false,
+     'sellerRatings': false,
+     'siteLinks': false
+        };
+//    var adcontainerRBIBBlock = {
+//        'container': 'adcontainerRBIB',
+//        'number': 3,
+//        'width': '468px',
+//        'lines': 2,
+//        'detailedAttribution': false,
+//        'colorTitleLink': '#00518f',
+//        'colorText': '#00518f',
+//        'colorDomainLink': '#00518f'
+//      };
+</script>
+
+
+<div id="adcontainerRBAG" class="_gads_">
+</div>
+ <script type="text/javascript" charset="utf-8">
+   var pageOptionsRAG = {
+        'pubId': 'pub-6898378105006882',
+        'query': '',
+        'channel': '9504759907',
+        'hl': 'pt',
+        'adPage': '5',
+        'plusOnes': false,
+        'sellerRatings': false,
+        'siteLinks': false
+   };
+   
+</script>
+
+<table width="468" border="0" cellspacing="0" cellpadding="0">
+    
+    <tr>
+        <td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a rel="nofollow" href="//www.telelistas.net/pessoas/rs/porto+alegre/302759916/vera+maria+molz/?q=">
+                                Vera Maria Molz</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="//www.telelistas.net/pessoas/rs/porto+alegre/302759916/vera+maria+molz" onclick="doLogPerformance('IB', 13, 302759916, );"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Henrique Dias, 236 ap 24<br>
+                            Bom Fim - Porto Alegre - RS - CEP: 90035-100
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" height="5" align="left" valign="middle" class="ib_ser">
+                            
+                            <a title="Veja mais detalhes desta empresa" href="//www.telelistas.net/pessoas/rs/porto+alegre/302759916/vera+maria+molz">+info</a>
+                            
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a TARGET="_blank" rel="nofollow" href="//www.telelistas.net/templates/Redireciona.aspx?origem=Facebook&url=http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Frs%2Fporto+alegre%2F302759916%2Fvera+maria+molz&local=controle">
+                                            <img src="//img.telelistas.net/img/ico_facebook.png"
+                                                align="absmiddle" title="Compartilhe essa informação no Facebook"
+                                                style="cursor: hand; border: 0px;" />
+                                        </a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a TARGET="_blank" rel="nofollow" href="//www.telelistas.net/templates/Redireciona.aspx?origem=Twitter&url=http://www.telelistas.net/pessoas/rs/porto+alegre/302759916/vera+maria+molz&local=controle&nome=Vera Maria Molz&cidade=RS">
+                                            <img src="//img.telelistas.net/img/ico_twitter.png"
+                                                align="absmiddle"  title="Compartilhe essa informação no Twitter"
+                                                style="cursor: hand; border: 0px;" />
+                                        </a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <g:plusone size="small" count="false" rel="nofollow" href="http://www.telelistas.net/pessoas/rs/porto+alegre/302759916/vera+maria+molz"></g:plusone>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+
+<table width="468" border="0" cellspacing="0" cellpadding="0">
+    
+    <tr>
+        <td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a rel="nofollow" href="//www.telelistas.net/pessoas/rs/porto+alegre/302760457/vera+regina+moura+de+abreu/?q=">
+                                Vera Regina Moura de Abreu</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="//www.telelistas.net/pessoas/rs/porto+alegre/302760457/vera+regina+moura+de+abreu" onclick="doLogPerformance('IB', 13, 302760457, );"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Henrique Dias, 41 ap 9<br>
+                            Bom Fim - Porto Alegre - RS - CEP: 90035-100
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" height="5" align="left" valign="middle" class="ib_ser">
+                            
+                            <a title="Veja mais detalhes desta empresa" href="//www.telelistas.net/pessoas/rs/porto+alegre/302760457/vera+regina+moura+de+abreu">+info</a>
+                            
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a TARGET="_blank" rel="nofollow" href="//www.telelistas.net/templates/Redireciona.aspx?origem=Facebook&url=http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Frs%2Fporto+alegre%2F302760457%2Fvera+regina+moura+de+abreu&local=controle">
+                                            <img src="//img.telelistas.net/img/ico_facebook.png"
+                                                align="absmiddle" title="Compartilhe essa informação no Facebook"
+                                                style="cursor: hand; border: 0px;" />
+                                        </a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a TARGET="_blank" rel="nofollow" href="//www.telelistas.net/templates/Redireciona.aspx?origem=Twitter&url=http://www.telelistas.net/pessoas/rs/porto+alegre/302760457/vera+regina+moura+de+abreu&local=controle&nome=Vera Regina Moura de Abreu&cidade=RS">
+                                            <img src="//img.telelistas.net/img/ico_twitter.png"
+                                                align="absmiddle"  title="Compartilhe essa informação no Twitter"
+                                                style="cursor: hand; border: 0px;" />
+                                        </a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <g:plusone size="small" count="false" rel="nofollow" href="http://www.telelistas.net/pessoas/rs/porto+alegre/302760457/vera+regina+moura+de+abreu"></g:plusone>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+
+<table width="468" border="0" cellspacing="0" cellpadding="0">
+    
+    <tr>
+        <td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a rel="nofollow" href="//www.telelistas.net/pessoas/rs/porto+alegre/302760488/vera+regina+pinto+valle/?q=">
+                                Vera Regina Pinto Valle</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="//www.telelistas.net/pessoas/rs/porto+alegre/302760488/vera+regina+pinto+valle" onclick="doLogPerformance('IB', 13, 302760488, );"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Henrique Dias, 236 ap 15<br>
+                            Bom Fim - Porto Alegre - RS - CEP: 90035-100
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" height="5" align="left" valign="middle" class="ib_ser">
+                            
+                            <a title="Veja mais detalhes desta empresa" href="//www.telelistas.net/pessoas/rs/porto+alegre/302760488/vera+regina+pinto+valle">+info</a>
+                            
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a TARGET="_blank" rel="nofollow" href="//www.telelistas.net/templates/Redireciona.aspx?origem=Facebook&url=http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Frs%2Fporto+alegre%2F302760488%2Fvera+regina+pinto+valle&local=controle">
+                                            <img src="//img.telelistas.net/img/ico_facebook.png"
+                                                align="absmiddle" title="Compartilhe essa informação no Facebook"
+                                                style="cursor: hand; border: 0px;" />
+                                        </a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a TARGET="_blank" rel="nofollow" href="//www.telelistas.net/templates/Redireciona.aspx?origem=Twitter&url=http://www.telelistas.net/pessoas/rs/porto+alegre/302760488/vera+regina+pinto+valle&local=controle&nome=Vera Regina Pinto Valle&cidade=RS">
+                                            <img src="//img.telelistas.net/img/ico_twitter.png"
+                                                align="absmiddle"  title="Compartilhe essa informação no Twitter"
+                                                style="cursor: hand; border: 0px;" />
+                                        </a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <g:plusone size="small" count="false" rel="nofollow" href="http://www.telelistas.net/pessoas/rs/porto+alegre/302760488/vera+regina+pinto+valle"></g:plusone>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+
+<table width="468" border="0" cellspacing="0" cellpadding="0">
+    
+    <tr>
+        <td height="15" colspan="2" align="left" valign="middle">
+        </td>
+    </tr>
+    
+    <tr>
+        <td width="8" bgcolor="#FFFFFF">
+        </td>
+        <td width="460" align="left" valign="middle" bgcolor="#FFFFFF">
+            <div style="position: relative;">
+                <table width="459" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="5" colspan="3" class="text_medio">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="324" colspan="2" align="left" valign="top" class="text_resultado_ib">
+                            
+                            <a rel="nofollow" href="//www.telelistas.net/pessoas/rs/porto+alegre/302773112/zelia+meregally+gamba/?q=">
+                                Zélia Meregally Gamba</a>
+                            
+                        </td>
+                        <td width="135" rowspan="3" align="right" valign="top" class="text_resultado_ib">
+                            <span style="position: absolute; right: 0;">
+                                <a href="//www.telelistas.net/pessoas/rs/porto+alegre/302773112/zelia+meregally+gamba" onclick="doLogPerformance('IB', 13, 302773112, );"><u><b>Ver telefone</b></u></a></span>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td height="2" colspan="2" align="left" valign="top" class="text_resultado_topo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" width="294" align="left" valign="top" class="text_endereco_ib">
+                            Rua Henrique Dias, 215 ap 31<br>
+                            Bom Fim - Porto Alegre - RS - CEP: 90035-100
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="2" colspan="3" align="left" valign="middle">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" height="5" align="left" valign="middle" class="ib_ser">
+                            
+                            <a title="Veja mais detalhes desta empresa" href="//www.telelistas.net/pessoas/rs/porto+alegre/302773112/zelia+meregally+gamba">+info</a>
+                            
+                            
+                        </td>
+                        <td height="5" align="right" valign="middle" class="ib_ser">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a TARGET="_blank" rel="nofollow" href="//www.telelistas.net/templates/Redireciona.aspx?origem=Facebook&url=http%3A%2F%2Fwww.telelistas.net%2Fpessoas%2Frs%2Fporto+alegre%2F302773112%2Fzelia+meregally+gamba&local=controle">
+                                            <img src="//img.telelistas.net/img/ico_facebook.png"
+                                                align="absmiddle" title="Compartilhe essa informação no Facebook"
+                                                style="cursor: hand; border: 0px;" />
+                                        </a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <a TARGET="_blank" rel="nofollow" href="//www.telelistas.net/templates/Redireciona.aspx?origem=Twitter&url=http://www.telelistas.net/pessoas/rs/porto+alegre/302773112/zelia+meregally+gamba&local=controle&nome=Zélia Meregally Gamba&cidade=RS">
+                                            <img src="//img.telelistas.net/img/ico_twitter.png"
+                                                align="absmiddle"  title="Compartilhe essa informação no Twitter"
+                                                style="cursor: hand; border: 0px;" />
+                                        </a>
+                                    </td>
+                                    <td align="right" style="padding: 0 6px 0 0;">
+                                        <div style="position: relative; top: 1px;">
+                                            <g:plusone size="small" count="false" rel="nofollow" href="http://www.telelistas.net/pessoas/rs/porto+alegre/302773112/zelia+meregally+gamba"></g:plusone>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="5" colspan="2" align="left" valign="middle">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td height="1" colspan="2" align="center" valign="middle" bgcolor="D5D5D5">
+        </td>
+    </tr>
+</table>
+
+</div>
+         </td>
+        </tr>
+  <div id="Content_gadsensefooterPnl">
+	
+<tr>
+  <td height="15">
+  </td>
+</tr>
+<tr>
+  <td>
+    <table width="468" border="0" cellpadding="0" cellspacing="1" >
+      <tr>
+        <td align="left" >
+          <div id="adcontainerRBF"> </div>
+
+          <script type="text/javascript" charset="utf-8">
+            var pageOptionsRB = {
+              'pubId': 'pub-6898378105006882',
+              'query': '',
+              'channel': '9504759907',
+              'hl': 'pt',
+              'adPage': '5',
+              'plusOnes': false,
+              'sellerRatings': false,
+              'siteLinks': false
+            };
+         </script>
+
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+</div>
+   
+        <tr>
+          <td>
+            <div id="Content_Footer">
+	
+
+<table width="468" border="0" cellspacing="0" cellpadding="0">
+    
+    <tr>
+        <td height="10">
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="bottom">
+            <table width="468" height="20" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    
+                            <td width="26" height="20" align="center"
+                              valign="middle" class="text_medio">
+                            0-9
+                            </td>
+                          
+                          <td width="1" bgcolor="DADADA"></td>
+                        
+                        <td width="16" height="20" align="center"
+                          valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                          class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'A');return false;">
+                            A</a>
+                          
+                      </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'B');return false;">B</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'C');return false;">C</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'D');return false;">D</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'E');return false;">E</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'F');return false;">F</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'G');return false;">G</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'H');return false;">H</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'I');return false;">I</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'J');return false;">J</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'K');return false;">K</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'L');return false;">L</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'M');return false;">M</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'N');return false;">N</a>
+                          
+                          </td>
+                    
+                            <td width="1" bgcolor="DADADA"></td>
+                          
+                            <td width="16" height="20" align="center"
+                              valign="middle" class="text_medio">
+                            O
+                            </td>
+                          
+                          <td width="1" bgcolor="DADADA"></td>
+                        
+                        <td width="16" height="20" align="center"
+                          valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                          class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'P');return false;">
+                            P</a>
+                          
+                      </td>
+                    
+                            <td width="1" bgcolor="DADADA"></td>
+                          
+                            <td width="16" height="20" align="center"
+                              valign="middle" class="text_medio">
+                            Q
+                            </td>
+                          
+                          <td width="1" bgcolor="DADADA"></td>
+                        
+                        <td width="16" height="20" align="center"
+                          valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                          class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'R');return false;">
+                            R</a>
+                          
+                      </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'S');return false;">S</a>
+                          
+                          </td>
+                    
+                          <td width="1" bgcolor="DADADA"></td>
+                    
+                          <td width="16" height="20" align="center"
+                            valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                            class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'T');return false;">T</a>
+                          
+                          </td>
+                    
+                            <td width="1" bgcolor="DADADA"></td>
+                          
+                            <td width="16" height="20" align="center"
+                              valign="middle" class="text_medio">
+                            U
+                            </td>
+                          
+                          <td width="1" bgcolor="DADADA"></td>
+                        
+                        <td width="16" height="20" align="center"
+                          valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                          class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'V');return false;">
+                            V</a>
+                          
+                      </td>
+                    
+                            <td width="1" bgcolor="DADADA"></td>
+                          
+                            <td width="16" height="20" align="center"
+                              valign="middle" class="text_medio">
+                            W
+                            </td>
+                          
+                            <td width="1" bgcolor="DADADA"></td>
+                          
+                            <td width="16" height="20" align="center"
+                              valign="middle" class="text_medio">
+                            X
+                            </td>
+                          
+                            <td width="1" bgcolor="DADADA"></td>
+                          
+                            <td width="16" height="20" align="center"
+                              valign="middle" class="text_medio">
+                            Y
+                            </td>
+                          
+                          <td width="1" bgcolor="DADADA"></td>
+                        
+                        <td width="16" height="20" align="center"
+                          valign="middle" onmouseover="this.className='menu_over';" onmouseout="this.className='menu_out';"
+                          class="text_medio">
+                          
+                            <a class="azddd" rel="nofollow" href="#" onclick="Change('letra', 'Z');return false;">
+                            Z</a>
+                          
+                      </td>
+                    
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td height="10">
+        </td>
+    </tr>
+    <tr>
+        <td height="26">
+            <table width="468" height="26" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="80" align="left" valign="middle">
+                        
+                                <a rel="nofollow" href="#" onclick="Change('pagina','4');return false;">
+                                  <img border="0" height="26" src="//img.telelistas.net/img/por_rodape_ante.gif" width="80" />
+                                </a>
+                        
+                    </td>
+                    <td align="center" background="//img.telelistas.net/img/por_fundo_rodape.gif"
+                        class="text_medio" valign="middle" width="308">
+                        
+                                  <a rel="nofollow" href="#" onclick="Change('pagina','1');return false;" class="resultado_roda">1</a>
+                         | 
+                                  <a rel="nofollow" href="#" onclick="Change('pagina','2');return false;" class="resultado_roda">2</a>
+                         | 
+                                  <a rel="nofollow" href="#" onclick="Change('pagina','3');return false;" class="resultado_roda">3</a>
+                         | 
+                                  <a rel="nofollow" href="#" onclick="Change('pagina','4');return false;" class="resultado_roda">4</a>
+                         | 5
+                    </td>
+                    <td width="80" align="right" valign="middle">
+                        
+                            <img border="0" height="26" src="//img.telelistas.net/img/por_rodape_prox_off.gif" width="80" />
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="10">
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top">
+            <table width="200" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="100" align="left" valign="bottom">
+                        <a rel="nofollow" href="#" onclick="window.open('/templates/imprimir_resultado.aspx?uf_busca=rs&orgm=0&atividade=&cod_atividade=-1&nome=&endereco=henrique dias&numero=0&telefone=&ddd=0&localidade=&cod_localidade=51000&bairro=&cod_bairro=0&entrega=0&cartoes=0&estacionamento=0&manobrista=0&reserva=0&tiquetes=0&residencial=0&comercial=0&btnemail=0&btnsite=0&pchave=&letra=&pagina=5&pcount=25&randsort=126896249&imprimir=1&guia=0','imprimir','height=500,width=653,resizable=no,top=20,left=10,scrollbars=yes,status=yes');return false">
+                            <img border="0" height="14" src="//img.telelistas.net/img/por_print_rodape.gif"
+                                width="88"></a>
+                    </td>
+                    <td width="100" align="right" valign="bottom">
+                        <a rel="nofollow" href="#" onclick="window.open('/templates/envia.aspx?tipo=resultado', 'EnviarResultado', 'scrollbars=no,resizable=yes,width=315px, height=480px');return false;">
+                            <img border="0" height="14" src="//img.telelistas.net/img/por_send_rodape.gif"
+                                width="74"></a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<form method="post" name="form_link" action="">
+<input type="hidden" name="link_envia" value="//www.telelistas.net/templates/resultado_busca.aspx?uf_busca=rs&orgm=0&atividade=&cod_atividade=-1&nome=&endereco=henrique dias&numero=0&telefone=&ddd=0&localidade=&cod_localidade=51000&bairro=&cod_bairro=0&entrega=0&cartoes=0&estacionamento=0&manobrista=0&reserva=0&tiquetes=0&residencial=0&comercial=0&btnemail=0&btnsite=0&pchave=&letra=&pagina=5&pcount=25&randsort=126896249">
+</form>
+
+</div>
+          </td>
+        </tr>
+      </table> 
+    </td>
+    <td width="10">
+    </td>
+    <td width="310" align="center" valign="top">
+    <table width="310" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="310" align="top">       
+          <div id="adcontainerRBAGS" class="_gads_" style="padding-top: 0px;">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="Content_NuvemGeo">
+
+</div>
+        </td>
+      </tr>
+      <tr>
+        <td align="right" valign="top">
+          <IFRAME NAME='banner' SRC='http://www.ophertas.net/banners/porto+alegre-rs?utm_source=widget&utm_medium=telelistas&utm_campaign=widget+poa' FRAMEBORDER='0' MARGINWIDTH='0' MARGINHEIGHT='0' SCROLLING='NO' ALIGN='center' WIDTH='320' HEIGHT='250'></iframe>
+          <br />
+          <!-- <br />  --> 
+          
+
+          <!-- Portal_Resultado_Landing_Square 
+          <div id='div-gpt-ad-1418214667398-0' style='width:320px; height:250px;'> 
+            <script type='text/javascript'>
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1418214667398-0'); }); 
+            </script> 
+          </div>
+          --> 
+        </td>
+      </tr>
+      <tr>
+        <td height="20">
+        </td>
+      </tr>
+      <tr>
+        <td width="320" height="396" valign="top">
+          <iframe name="palco" src="http://templates.buscape.com/dynatemplate/telelistas_320x396.html?thumbSize=80&affiliateId=23146442&partnerId=7405&k0=&k1=&k2=&k3="
+            frameborder="0" width="320" height="396" scrolling="no"></iframe>
+        </td>
+      </tr>
+      <tr>
+        <td height="20">
+        </td>
+      </tr>
+      <tr>
+        <td height="20">
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          <!-- <iframe src="/templates/framecomprafacil.aspx" frameborder="0" width="310" height="250" scrolling="no"></iframe> -->
+        </td>
+      </tr>
+    </table>
+  </td>
+    <td width="10"></td>
+  </tr>
+  <tr>
+    <td height="20" colspan="7">
+    </td>
+  </tr>
+  
+ <script type="text/javascript" charset="utf-8">
+   var pageOptions = {
+     'pubId': 'pub-6898378105006882',
+     'query': '',
+     'channel': '1820633586',
+     'hl': 'pt',
+     'adPage': '5',
+     'location': true,
+     'plusOnes': false,
+     'sellerRatings': true,
+     'siteLinks': true
+   };
+ 
+   var adblockSide = {
+   'container': 'adcontainerSide',
+     'number': 3,
+     'width': '320px',
+     'lines': 1,
+     'colorTitleLink': '#00518F',
+     'colorText': '#00518F',
+     'colorDomainLink': '#00518F',
+     'colorBorder': '#B3B3B3',
+     'detailedAttribution': false
+   };
+   if (document.getElementById("adcontainerSide") && !document.getElementById("adcontainerRBAGS")) {
+       _googCsa('ads', pageOptions, adblockSide);
+   }
+</script>
+
+<script type="text/javascript" charset="utf-8">
+
+// Antes das AGs
+  var adcontainerRBAGBlock = {
+    'container': 'adcontainerRBAG',
+    'number': 3,
+    'width': '468px',
+    'lines': 3,
+    'domainLinkAboveDescription': true,
+    'fontSizeAttribution': 8,
+    'colorTitleLink': '#00518f',
+    'colorText': '#00518f',
+    'colorDomainLink': '#00518f',
+    'colorBackground': '#ededed',
+    'colorBorder': '#ededed',
+    'detailedAttribution': false
+  };
+
+// Antes das IBs
+  var adcontainerRBIBBlock = {
+    'container': 'adcontainerRBIB',
+    'number': 3,
+    'width': '468px',
+    'lines': 3,
+    'domainLinkAboveDescription': true,
+    'fontSizeAttribution': 8,
+    'colorTitleLink': '#00518f',
+    'colorText': '#00518f',
+    'colorDomainLink': '#00518f',
+    'detailedAttribution': false
+  };
+  
+// No final da pagina
+  var adcontainerRBFBlock = {
+    'container': 'adcontainerRBF',
+    'number': 4,
+    'width': '468px',
+    'lines': 3,
+    'domainLinkAboveDescription': true,
+    'fontSizeAttribution': 8,
+    'colorTitleLink': '#00518f',
+    'colorText': '#00518f',
+    'colorDomainLink': '#00518f',
+    'detailedAttribution': false
+  };
+   
+// Na Lateral
+  var adcontainerRBAGSBlock = {
+    'container': 'adcontainerRBAGS',
+    'number': 3,
+    'width': '320px',
+    'lines': 3,
+    'fontSizeAttribution': 8,
+    'domainLinkAboveDescription': true,
+    'colorTitleLink': '#00518f',
+    'colorText': '#00518f',
+    'colorDomainLink': '#00518f',
+    'detailedAttribution': false
+  };
+
+    if ("pageOptionsRAG" in window) {
+      var po = pageOptionsRAG;
+    } else if ("pageOptionsRB" in window) {
+      var po = pageOptionsRB;
+    } else if ("pageOptionsRBIB" in window) { 
+      var po = pageOptionsRBIB; 
+    }
+
+      
+      _googCsa('ads', po, adcontainerRBAGBlock, adcontainerRBAGSBlock, adcontainerRBFBlock);
+  
+</script>
+
+
+	        
+  
+	    		<tr>
+	    			<td height="1" colspan="7" align="center"></td>
+	    		</tr>				
+			
+          <tr>
+				    <td height="20" colspan="7" align="center">
+              <table width="980" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr> 
+                  <td>
+                    <div id="rodape-new">
+                      <div class="box-rodape">
+                        <span class="tit-list">TeleListas.net na Web</span>
+                        <ul class="ul-list">
+                          <li>
+                            <a rel="nofollow" href="http://www.telelistas.net/blog/" target="_blank" class="rodape">
+                              <img src="//img.telelistas.net/img/ico-blog.gif" border="0" align="absmiddle" alt="Blog TeleListas.net"/>
+                              Blog TeleListas.net
+                            </a>
+                          </li>
+                                            
+                          <li>
+                            <a rel="nofollow" href="http://pt-br.facebook.com/pages/TeleListasnet/473502715552?ref=ts" target="_blank" class="rodape">
+                              <img src="//img.telelistas.net/img/facebook_16.gif" border="0" align="absmiddle" alt="Facebook"/>
+                              Facebook
+                            </a>
+                          </li>
+                                            
+                          <li>
+                            <a rel="nofollow" href="https://plus.google.com/+telelistas/posts" target="_blank" class="rodape">
+                              <img src="//img.telelistas.net/img/ico-plus.png" border="0" align="absmiddle" alt="Google+"/>
+                              Google+
+                            </a>
+                          </li>
+                          <li>
+                            <a rel="nofollow" href="http://twitter.com/TeleListas" target="_blank" class="rodape">
+                              <img src="//img.telelistas.net/img/ico-twitter.gif" border="0" align="absmiddle" alt="Twitter"/>
+                              Twitter
+                            </a>
+                          </li>
+                          <li>
+                            <a rel="nofollow" href="http://www.conexaomercado.com.br" target="_blank" class="rodape">
+                              <img src="//img.telelistas.net/img/ico-conexao-novo.gif" border="0" align="absmiddle" alt="Conexão Mercado"/>
+                              Conexão Mercado
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                              
+                      <div class="box-rodape">
+                        <a  class="rodape semSublinhado"  href="/templates/busca_assunto_uf.aspx" target="_self">
+                          <span class="tit-list">Atividades por Localidade</span>
+                        </a> 
+                        <ul class="listaCapitais">
+                          <li><a  href="//www.telelistas.net/sp/sao+paulo">São Paulo</a></li>
+                          <li><a  href="//www.telelistas.net/rj/rio+de+janeiro">Rio de Janeiro</a></li>
+                          <li><a  href="//www.telelistas.net/mg/belo+horizonte">Belo Horizonte</a></li>
+                          <li><a  href="//www.telelistas.net/df/brasilia">Brasília</a></li>
+                          <li><a  href="//www.telelistas.net/rs/porto+alegre">Porto Alegre</a></li>
+                          <li><a  href="//www.telelistas.net/ba/salvador">Salvador</a></li>
+                          <li><a  href="//www.telelistas.net/pr/curitiba">Curitiba</a></li>
+                          <li><a href="//www.telelistas.net/ce/fortaleza">Fortaleza</a></li>
+                          <li><a href="//www.telelistas.net/pe/recife">Recife</a></li>
+                          <li><a  href="//www.telelistas.net/go/goiania">Goiânia</a></li>
+                          <li><a  href="//www.telelistas.net/pa/belem">Belém</a></li>
+                          <li><a  href="//www.telelistas.net/am/manaus">Manaus</a></li>
+                          <li><a  href="//www.telelistas.net/ms/campo+grande">Campo Grande</a></li>
+                          <li><a  href="//www.telelistas.net/al/maceio">Maceió</a></li>
+                          <li><a  href="//www.telelistas.net/ma/sao+luis">São Luís</a></li>
+                          <li><a  href="//www.telelistas.net/rn/natal">Natal</a></li>
+                          <li><a  href="//www.telelistas.net/pb/joao+pessoa">João Pessoa</a></li>
+                          <li><a  href="//www.telelistas.net/pi/teresina">Teresina</a></li>
+                          <li><a  href="//www.telelistas.net/mt/cuiaba">Cuiabá</a></li>
+                          <li><a  href="//www.telelistas.net/sc/florianopolis">Florianópolis</a></li>
+                          <li><a  href="//www.telelistas.net/se/aracaju">Aracaju</a></li>
+                          <li><a  href="//www.telelistas.net/es/vitoria">Vitória</a></li>
+                          <li><a  href="//www.telelistas.net/ac/rio+branco">Rio Branco</a></li>
+                          <li><a  href="//www.telelistas.net/ap/macapa">Macapá</a></li>
+                          <li><a  href="//www.telelistas.net/ro/porto+velho">Porto Velho</a></li>
+                          <li><a  href="//www.telelistas.net/rr/boa+vista">Boa Vista</a></li>
+                          <li class="noBullet"><a  href="//www.telelistas.net/to/palmas">Palmas</a></li>
+                          <li class="verTodas"><a  href="//www.telelistas.net/br">Todas as cidades</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="box-rodape">
+                        <span class="tit-list">Mais Buscas</span>
+                        
+                        <ul class="ul-list">
+                          <li><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a  class="rodape"  href="//www.telelistas.net/guias" target="_self">Por Palavra-chave</a></li>
+                          <li><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a  class="rodape" rel="nofollow" href="//www.telelistas.net/busca_local/busca_local.aspx" target="_self">Mapas &amp; Endere&ccedil;os</a></li>
+                          <li><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a  class="rodape" rel="nofollow" href="//www.telelistas.net/templates/mapa_mundi.aspx" target="_self">Listas do Mundo</a></li>
+                          <li><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a  class="rodape"  href="//www.telelistas.net/ddd" target="_self">DDD</a></li>
+                          <li><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a  class="rodape"  href="//www.telelistas.net/ddi" target="_self">DDI</a></li>
+                          <li><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a  class="rodape"  href="//www.telelistas.net/templates/cep.aspx" target="_self">CEP</a></li>		
+                        </ul>
+									  	  
+									  	  <span class="tit-list" style="margin-top:20px;">TeleListas Ophertas</span>
+                        <ul class="listaCapitais">
+										      <li><a rel="nofollow" href="http://www.ophertas.net/belo+horizonte-mg">Belo Horizonte</a></li>
+										      <li><a rel="nofollow" href="http://www.ophertas.net/curitiba-pr">Curitiba</a></li>
+										      <li><a rel="nofollow" href="http://www.ophertas.net/brasilia-df">Distrito Federal</a></li>									
+										      <li><a rel="nofollow" href="http://www.ophertas.net/goiania-go">Goiânia</a></li>
+                          <li><a rel="nofollow" href="http://www.ophertas.net/niteroi-rj">Niterói</a></li>
+										      <li><a rel="nofollow" href="http://www.ophertas.net/porto+alegre-rs">Porto Alegre</a></li>
+										      <li><a rel="nofollow" href="http://www.ophertas.net/recife-pe">Recife</a></li>
+                          <li><a rel="nofollow" href="http://www.ophertas.net/rio+de+janeiro-rj">Rio de Janeiro</a></li>
+										      <li><a rel="nofollow" href="http://www.ophertas.net/salvador-ba">Salvador</a></li>
+										      <li class="noBullet"><a rel="nofollow" href="http://www.ophertas.net/vitoria-es">Vitória</a></li>
+    										</ul>
+                      </div>
+                      
+                      <div class="box-rodape">
+                        <span class="tit-list">TeleListas.net</span>
+                        <ul class="ul-list">
+                          <li><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top" /><a class="rodape" rel="nofollow" href="//www.telelistas.net/templates/aempresa.aspx?sec=0" target="_self">Quem Somos</a></li>
+                          <li id="nav_rodape"><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a class="rodape" rel="nofollow" href="//www.telelistas.net/templates/parceiros.aspx" target="_self">Nossos Parceiros</a></li>
+                          <li id="nav_rodape"><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a class="rodape" rel="nofollow" href="https://wwws.telelistas.net/"_target="_self">Anuncie</a></li>
+    										  <li id="nav_rodape"><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a class="rodape" rel="nofollow" href="//areadeclientes.linkmercado.com.br/cadastramento" content="/templates/anuncie.aspx" target="_self">Produtos TeleListas</a></li>
+                          <li id="nav_rodape"><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a class="rodape" rel="nofollow" href="//www.telelistas.net/templates/talentos.aspx" target="_self">Trabalhe Conosco</a></li>
+                          <li id="nav_rodape"><img src="//img.telelistas.net/img/bullet-rodape.gif" width="10" height="13" border="0" align="top"/><a class="rodape" rel="nofollow" href="//www.telelistas.net/templates/form_fale.aspx" target="_self">Fale Conosco</a></li>
+                        </ul>
+                      </div>
+                      <div style="clear:both;"></div>
+                    </div>
+                    <div class="text_copy">© TeleListas 2016. <input type="hidden" id="internal_ip" value="10.61.179.100" /></div>
+                    <div class="privacidade"><a  class="privacidade" rel="nofollow" href="/templates/politica_privacidade.aspx" target="_self" style="padding-left:0px;">Política de Privacidade</a></div>
+        					</td>
+        				</tr>
+        			</table>
+        		</td>
+        	</tr>
+  
+	      </table>
+  
+  <div style="visibility: hidden;">
+  </div>
+  
+<script async type="text/javascript" charset="UTF-8" src="http://logm.linkmercado.com.br/public/js/log_desktop.js?versao=0.3.1"></script>
+
+</body>
+</html>

@@ -1,4 +1,12 @@
 ﻿# coding: utf-8
+
+=begin 
+
+ruby -w test/teste_leitor.rb -n /RunTime/
+ruby test/teste_leitor.rb
+
+=end
+
 require_relative '../lib/listas/sessao'
 require_relative '../lib/listas/leitor'
 require_relative '../lib/listas/assinante'
@@ -54,27 +62,33 @@ describe "assinantes" do
   end
 
   (1..5).each do |n|
-    File.open( File.join(Dir.pwd,"test/teste_node_#{n}.txt"), 'r') do |f|
+    File.open( File.join(Dir.pwd,"test/mocks/teste_node_#{n}.txt"), 'r') do |f|
     # File.open("teste_node_#{n}.txt", 'r') do |f|
       node = Nokogiri::HTML(f.read)
 
       it "deve retornar 25 assinantes para a pagina-teste #{n}" do
         assert_equal(25, @leitor.extrair_assinantes(node, @mutex)) if n < 5
-        assert_equal(20, @leitor.extrair_assinantes(node, @mutex)) if n == 5
+        assert_equal(4, @leitor.extrair_assinantes(node, @mutex)) if n == 5
       end
 
-      it "deve esperar 120 assinantes para a pagina-teste #{n}" do
-        assert_equal(120, @leitor.extrair_total_assinantes(node))
+      it "deve esperar 104 assinantes para a pagina-teste #{n}" do
+        assert_equal(104, @leitor.extrair_total_assinantes(node))
       end
     end
   end
 
-  File.open( File.join(Dir.pwd,"test/teste_item.txt"), 'r') do |f|
+  File.open( File.join(Dir.pwd,"test/mocks/teste_item.txt"), 'r') do |f|
 #  File.open("teste_item.txt", 'r') do |f|
     node = Nokogiri::HTML(f.read)
 
     it "deve extrair assinante Gustavo para o item-teste" do
       assert_match(/gustavo/i, @leitor.extrair_assinante(node).nome)
+    end    
+
+    it "deve extrair telefone Tal para o item-teste" do
+      # Old   |   http://www.telelistas.net/pessoas/luiz+gustavo+vargas+da+silva--canoas-rs-178750785
+      # 2016  |   http://www.telelistas.net/pessoas/rs/canoas/302267874/luiz+gustavo+vargas+da+silva/?q=luiz%20gustavo%20vargas%20da%20silva
+      assert_match(/gustavo/i, @leitor.extrair_assinante(node).telefone)
     end    
 
   end
