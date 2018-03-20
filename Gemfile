@@ -7,5 +7,5 @@ gem 'eventmachine'
 
 group :development,:test do
   gem 'rspec'
-  gem 'rack-test'
+  gem 'rack-test' ~> 1.5.5
 end
